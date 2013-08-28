@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Persona.Master.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 133px;
+        }
+        .style3
+        {
+            width: 429px;
+        }
+        .style4
+        {
+            width: 71px;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+            </div>
+            <div class="loginDisplay">
+                <table class="style1">
+                    <tr>
+                        <td class="style2">
+                            <asp:Image ID="Image1" runat="server" Height="156px" ImageAlign="Left" 
+                                ImageUrl="~/Multimedia/Logo.png" Width="123px" />
+                        </td>
+                        <td class="style4">
+                            &nbsp;</td>
+                        <td class="style3">
+                            <asp:Image ID="Image2" runat="server" ImageAlign="AbsMiddle" 
+                                ImageUrl="~/Multimedia/banner_adultos_mayores.jpg" Width="678px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="BarraAzul1"> 
+            <asp:Panel ID="PanelBarraAzul1" runat="server" BackColor="#0079AD" 
+                Height="25px">
+            </asp:Panel>
+        </div>
+        <div id="BarraAzul2"> 
+            <asp:Panel ID="PanelBarraColorAzul2" runat="server" BackColor="#004A99" 
+                Height="25px">
+            </asp:Panel>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
