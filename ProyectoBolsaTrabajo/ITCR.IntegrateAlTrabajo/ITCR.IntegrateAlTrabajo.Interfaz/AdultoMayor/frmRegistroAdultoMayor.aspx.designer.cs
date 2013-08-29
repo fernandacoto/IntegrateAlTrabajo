@@ -67,13 +67,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblNombre;
         
         /// <summary>
-        /// TextBox2 control.
+        /// txtNombrePersona control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtNombrePersona;
         
         /// <summary>
         /// lblApellido1 control.
@@ -146,6 +146,24 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCedula;
+        
+        /// <summary>
+        /// lblFechaNacimiento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFechaNacimiento;
+        
+        /// <summary>
+        /// txtFechaNacimiento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFechaNacimiento;
         
         /// <summary>
         /// lblTelefonoHabitacion control.

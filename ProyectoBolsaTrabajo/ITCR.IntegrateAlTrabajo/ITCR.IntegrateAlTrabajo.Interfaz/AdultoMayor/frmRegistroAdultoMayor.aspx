@@ -81,6 +81,18 @@
         {
             height: 25px;
         }
+        .style31
+        {
+            width: 299px;
+        }
+        .style32
+        {
+            width: 25px;
+        }
+        .style33
+        {
+            width: 118px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -153,7 +165,7 @@
                                     <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtNombrePersona" runat="server"></asp:TextBox>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -221,11 +233,25 @@
                             </tr>
                             <tr>
                                 <td class="style24">
+                                    <asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha de nacimiento"></asp:Label>
+                                </td>
+                                <td class="style25">
+                                    <asp:TextBox ID="txtFechaNacimiento" runat="server" TextMode="Date"></asp:TextBox>
+                                </td>
+                                <td class="style17">
+                                    &nbsp;</td>
+                                <td class="style20">
+                                    &nbsp;</td>
+                                <td class="style11">
+                                    &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="style24">
                                     <asp:Label ID="lblTelefonoHabitacion" runat="server" 
                                         Text="Teléfono de habitación"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtTelefonoHabitacion" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtTelefonoHabitacion" runat="server" TextMode="Phone"></asp:TextBox>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -239,7 +265,7 @@
                                     <asp:Label ID="lblTelefonoCelular" runat="server" Text="Teléfono celular"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtCelular" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtCelular" runat="server" TextMode="Phone"></asp:TextBox>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -253,7 +279,7 @@
                                     <asp:Label ID="lblCorreoElectronico" runat="server" Text="Correo electrónico"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtCorreoElectronico" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtCorreoElectronico" runat="server" TextMode="Email"></asp:TextBox>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -278,19 +304,19 @@
                                     &nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="style24">
+                                <td>
                                     <asp:Label ID="lblCanton" runat="server" Text="Cantón"></asp:Label>
                                 </td>
-                                <td class="style25">
+                                <td class="style31">
                                     <asp:DropDownList ID="drpCanton" runat="server">
                                     </asp:DropDownList>
                                 </td>
-                                <td class="style17">
-                                    &nbsp;</td>
-                                <td class="style20">
-                                    &nbsp;</td>
-                                <td class="style11">
-                                    &nbsp;</td>
+                                <td class="style32">
+                                    </td>
+                                <td class="style33">
+                                    </td>
+                                <td>
+                                    </td>
                             </tr>
                             <tr>
                                 <td class="style24">
@@ -372,7 +398,7 @@
                                     <asp:Label ID="lblContraseña" runat="server" Text="Contraseña"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtContraseña" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -384,10 +410,10 @@
                             <tr>
                                 <td class="style24">
                                     <asp:Label ID="lblConfirmacionContraseña" runat="server" 
-                                        Text="Segundo apellido"></asp:Label>
+                                        Text="Confirmación de contraseña"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtConfirmacionContraseña" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtConfirmacionContraseña" runat="server" TextMode="Password"></asp:TextBox>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
