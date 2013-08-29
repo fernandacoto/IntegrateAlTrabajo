@@ -71,3 +71,24 @@ EXEC dbo.pr_IATDistrito_Insertar "San Gabriel",6,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Legua",6,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Monterrey",6,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Salitrillos",6,NULL,NULL;
+
+EXEC dbo.pr_IATIdioma_Insertar "Inglés", NULL, NULL;
+EXEC dbo.pr_IATIdioma_Insertar "Francés", NULL, NULL;
+EXEC dbo.pr_IATIdioma_Insertar "Portugés", NULL, NULL;
+EXEC dbo.pr_IATIdioma_Insertar "Mandarín", NULL, NULL;
+EXEC dbo.pr_IATIdioma_Insertar "Otro", NULL, NULL;
+
+EXEC dbo.pr_IATTipoContacto_Insertar "Tel Habitación", NULL, NULL;
+EXEC dbo.pr_IATTipoContacto_Insertar "Tel Celular", NULL, NULL;
+EXEC dbo.pr_IATTipoContacto_Insertar "Correo-E", NULL, NULL;
+
+EXEC dbo.pr_IATTipoGuiaUso_Insertar "Documento", NULL, NULL;
+EXEC dbo.pr_IATTipoGuiaUso_Insertar "Video", NULL, NULL;
+EXEC dbo.pr_IATTipoGuiaUso_Insertar "Audio", NULL, NULL;
+
+EXEC dbo.pr_IATTipoTrabajo_Insertar "Voluntariado", NULL, NULL;
+EXEC dbo.pr_IATTipoTrabajo_Insertar "Remunerado", NULL, NULL;
+
+EXEC dbo.pr_IATTipoUsuario_Insertar "Adulto Mayor", NULL, NULL;
+EXEC dbo.pr_IATTipoUsuario_Insertar "Empresa", NULL, NULL;
+EXEC dbo.pr_IATTipoUsuario_Insertar "Administrador", NULL, NULL;
