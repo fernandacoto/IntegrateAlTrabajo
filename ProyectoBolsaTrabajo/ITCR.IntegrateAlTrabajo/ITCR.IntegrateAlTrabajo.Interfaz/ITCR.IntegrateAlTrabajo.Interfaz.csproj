@@ -55,6 +55,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="AdultoMayor\frmRegistroAdultoMayor.aspx" />
     <Content Include="Multimedia\banner_adultos_mayores.jpg" />
     <Content Include="Multimedia\Logo.png" />
     <Content Include="Styles\Site.css" />
@@ -106,6 +107,13 @@
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdultoMayor\frmRegistroAdultoMayor.aspx.cs">
+      <DependentUpon>frmRegistroAdultoMayor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultoMayor\frmRegistroAdultoMayor.aspx.designer.cs">
+      <DependentUpon>frmRegistroAdultoMayor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
