@@ -357,3 +357,14 @@ EXEC dbo.pr_IATDistrito_Insertar "San Isidro",43,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Tobosi",43,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Patio de Agua",43,NULL,NULL;
 
+EXEC dbo.pr_IATCanton_Insertar "Heredia", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Barva", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Santo Domingo", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Santa Bárbara", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Rafael", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Isidro", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Belén", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Flores", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Pablo", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Sarapiquí", 4, NULL, NULL;
+
