@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ITCR.IntegrateAlTrabajo.Interfaz
 {
-    public partial class AdultoMayor : System.Web.UI.MasterPage
+    public partial class frmRegistroPersona : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

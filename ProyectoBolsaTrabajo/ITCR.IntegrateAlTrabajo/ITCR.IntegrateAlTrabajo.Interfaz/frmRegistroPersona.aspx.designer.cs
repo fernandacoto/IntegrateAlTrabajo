@@ -11,7 +11,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz
 {
 
 
-    public partial class frmEjemplo
+    public partial class frmRegistroPersona
     {
     }
 }

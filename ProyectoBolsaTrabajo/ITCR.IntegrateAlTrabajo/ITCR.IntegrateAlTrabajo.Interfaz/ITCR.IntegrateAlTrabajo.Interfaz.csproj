@@ -50,16 +50,14 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Account\ChangePassword.aspx" />
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="frmEjemplo.aspx" />
+    <Content Include="frmRegistroPersona.aspx" />
     <Content Include="Multimedia\banner_adultos_mayores.jpg" />
     <Content Include="Multimedia\Logo.png" />
     <Content Include="Styles\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
@@ -73,13 +71,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,26 +99,12 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdultoMayor.Master.cs">
-      <DependentUpon>AdultoMayor.Master</DependentUpon>
+    <Compile Include="frmRegistroPersona.aspx.cs">
+      <DependentUpon>frmRegistroPersona.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdultoMayor.Master.designer.cs">
-      <DependentUpon>AdultoMayor.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmEjemplo.aspx.cs">
-      <DependentUpon>frmEjemplo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmEjemplo.aspx.designer.cs">
-      <DependentUpon>frmEjemplo.aspx</DependentUpon>
+    <Compile Include="frmRegistroPersona.aspx.designer.cs">
+      <DependentUpon>frmRegistroPersona.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -146,7 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
-    <Content Include="AdultoMayor.Master" />
     <None Include="Persona.Master" />
   </ItemGroup>
   <ItemGroup>
