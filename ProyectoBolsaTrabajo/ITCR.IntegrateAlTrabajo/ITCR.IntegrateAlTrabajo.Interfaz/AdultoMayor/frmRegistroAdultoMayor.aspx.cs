@@ -11,7 +11,10 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                mvRegistroAdultoMayor.ActiveViewIndex = 0;
+            }
         }
     }
 }
