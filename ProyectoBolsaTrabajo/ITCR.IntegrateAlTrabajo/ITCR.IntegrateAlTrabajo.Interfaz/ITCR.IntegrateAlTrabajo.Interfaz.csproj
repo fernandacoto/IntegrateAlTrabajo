@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7E29F4A5-040F-45EF-95E4-F86FD0603F25}</ProjectGuid>
+    <ProjectGuid>{F10BFCAC-8840-4483-87D3-169B6F3B0069}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -50,14 +50,13 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="Account\ChangePassword.aspx" />
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="frmRegistroPersona.aspx" />
-    <Content Include="Multimedia\banner_adultos_mayores.jpg" />
-    <Content Include="Multimedia\Logo.png" />
     <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
@@ -71,6 +70,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,23 +105,23 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistroPersona.aspx.cs">
-      <DependentUpon>frmRegistroPersona.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="frmRegistroPersona.aspx.designer.cs">
-      <DependentUpon>frmRegistroPersona.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Persona.Master.cs">
-      <DependentUpon>Persona.Master</DependentUpon>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Persona.Master.designer.cs">
-      <DependentUpon>Persona.Master</DependentUpon>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -123,7 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
-    <None Include="Persona.Master" />
+    <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ITCR.IntegrateAlTrabajo.Datos\ITCR.IntegrateAlTrabajo.Datos.csproj">
@@ -143,7 +149,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>18971</DevelopmentServerPort>
+          <DevelopmentServerPort>23793</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
