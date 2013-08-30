@@ -1,4 +1,5 @@
 EXEC dbo.pr_IATProvincia_Insertar "Sebastian", NULL, NULL ;
+EXEC dbo.pr_IATProvincia_Insertar "Fernanda", NULL, NULL ;
 EXEC dbo.pr_IATProvincia_Insertar "Alajuela", NULL, NULL;
 EXEC dbo.pr_IATProvincia_Insertar "Cartago", NULL, NULL;
 EXEC dbo.pr_IATProvincia_Insertar "Heredia", NULL, NULL;
