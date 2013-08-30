@@ -22,6 +22,27 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             if (!IsPostBack)
             {
                 mvRegistroEmpresa.ActiveViewIndex = 0;
+                cargarTodosDropDownList();
+            }
+        }
+
+        private void cargarTodosDropDownList()
+        {
+            cargarDropDownListProvincias();
+            //cargarDropDownListCantones();
+            //cargarDropDownListDistritos();
+        }
+
+        private void cargarDropDownListProvincias()
+        {
+            drpProvincia.Items.Clear();
+            cIATProvinciaNegocios Provincia = new cIATProvinciaNegocios(1, "A", 2, "B");
+            DataTable TablaProvincia = Provincia.SeleccionarTodos();
+
+            for (int i = 0; i < TablaProvincia.Rows.Count; i++)
+            {
+                ListItem ItemProvincia = new ListItem(TablaProvincia.Rows[i]["Nom_Provincia"].ToString(), TablaProvincia.Rows[i]["Id_Provincia"].ToString());
+                drpProvincia.Items.Add(ItemProvincia);
             }
         }
 

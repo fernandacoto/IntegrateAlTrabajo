@@ -22,13 +22,31 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa {
         protected global::System.Web.UI.WebControls.Label lblRegistroEmpresa;
         
         /// <summary>
-        /// Control ValidationSummaryRegistroEmpresa.
+        /// Control vsRegistroEmpresaPaso3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummaryRegistroEmpresa;
+        protected global::System.Web.UI.WebControls.ValidationSummary vsRegistroEmpresaPaso3;
+        
+        /// <summary>
+        /// Control vsRegistroEmpresaPaso2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary vsRegistroEmpresaPaso2;
+        
+        /// <summary>
+        /// Control vsRegistroEmpresaPaso1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary vsRegistroEmpresaPaso1;
         
         /// <summary>
         /// Control mvRegistroEmpresa.
