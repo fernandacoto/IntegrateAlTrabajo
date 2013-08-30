@@ -523,7 +523,13 @@ EXEC dbo.pr_IATDistrito_Insertar "Sabalito",72,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Aguabuena",72,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Limoncito",72,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Pittier",72,NULL,NULL;
-EXEC dbo.pr_IATDistrito_Insertar "San Vito",73,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Parrita",73,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Corredor",74,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "La Cuesta",74,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Paso Canoas",74,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Laurel",74,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Jacó",75,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Tárcoles",75,NULL,NULL;
 
 EXEC dbo.pr_IATDistrito_Insertar "Limón",75,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Valle la Estrella",75,NULL,NULL;
