@@ -26,6 +26,66 @@ EXEC dbo.pr_IATCanton_Insertar "Curridabat", 1, NULL, NULL;
 EXEC dbo.pr_IATCanton_Insertar "Pérez Zeledón", 1, NULL, NULL;
 EXEC dbo.pr_IATCanton_Insertar "León Cortés", 1, NULL, NULL;
 EXEC dbo.pr_IATCanton_Insertar "Mora", 1, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Alajuela", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Ramón", 2, NULL, NULL
+EXEC dbo.pr_IATCanton_Insertar "Grecia", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Mateo", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Atenas", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Naranjo", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Palmares", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Poás", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Orotina", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Carlos", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Zarcero", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Valverde Vega", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Upala", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Los Chiles", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Guatuso", 2, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Cartago", 3, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Paraíso", 3, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "La Unión", 3, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Jiménez", 3, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Turrialba", 3, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Alvarado", 3, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Oreamuno", 3, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "El Guarco", 3, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Heredia", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Barva", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Santo Domingo", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Santa Bárbara", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Rafael", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Isidro", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Belén", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Flores", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "San Pablo", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Sarapiquí", 4, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Liberia", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Nicoya", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Santa Cruz", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Bagaces", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Carrillo", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Cañas", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Abangares", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Tilarán", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Nandayure", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "La Cruz", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Hojancha", 5, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Puntarenas", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Esparza", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Buenos Aires", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Montes de Oro", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Osa", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Aguirre", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Golfito", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Coto Brus", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Corredores", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Garabito", 6, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Limón", 7, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Pococí", 7, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Siquirres", 7, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Talamanca", 7, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Matina", 7, NULL, NULL;
+EXEC dbo.pr_IATCanton_Insertar "Guácimo", 7, NULL, NULL;
 
 EXEC dbo.pr_IATDistrito_Insertar "Carmen",1,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Merced",1,NULL,NULL;
@@ -71,28 +131,6 @@ EXEC dbo.pr_IATDistrito_Insertar "San Gabriel",6,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Legua",6,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Monterrey",6,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Salitrillos",6,NULL,NULL;
-
-EXEC dbo.pr_IATIdioma_Insertar "Inglés", NULL, NULL;
-EXEC dbo.pr_IATIdioma_Insertar "Francés", NULL, NULL;
-EXEC dbo.pr_IATIdioma_Insertar "Portugés", NULL, NULL;
-EXEC dbo.pr_IATIdioma_Insertar "Mandarín", NULL, NULL;
-EXEC dbo.pr_IATIdioma_Insertar "Otro", NULL, NULL;
-
-EXEC dbo.pr_IATTipoContacto_Insertar "Tel Habitación", NULL, NULL;
-EXEC dbo.pr_IATTipoContacto_Insertar "Tel Celular", NULL, NULL;
-EXEC dbo.pr_IATTipoContacto_Insertar "Correo-E", NULL, NULL;
-
-EXEC dbo.pr_IATTipoGuiaUso_Insertar "Documento", NULL, NULL;
-EXEC dbo.pr_IATTipoGuiaUso_Insertar "Video", NULL, NULL;
-EXEC dbo.pr_IATTipoGuiaUso_Insertar "Audio", NULL, NULL;
-
-EXEC dbo.pr_IATTipoTrabajo_Insertar "Voluntariado", NULL, NULL;
-EXEC dbo.pr_IATTipoTrabajo_Insertar "Remunerado", NULL, NULL;
-
-EXEC dbo.pr_IATTipoUsuario_Insertar "Adulto Mayor", NULL, NULL;
-EXEC dbo.pr_IATTipoUsuario_Insertar "Empresa", NULL, NULL;
-EXEC dbo.pr_IATTipoUsuario_Insertar "Administrador", NULL, NULL;
-
 EXEC dbo.pr_IATDistrito_Insertar "Guadalupe",7,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "San Francisco",7,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Calle Blancos",7,NULL,NULL;
@@ -168,23 +206,6 @@ EXEC dbo.pr_IATDistrito_Insertar "Tabarcia",20,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Piedras Negras",20,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Picagres",20,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Jaris",20,NULL,NULL;
-
-EXEC dbo.pr_IATCanton_Insertar "Alajuela", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "San Ramón", 2, NULL, NULL
-EXEC dbo.pr_IATCanton_Insertar "Grecia", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "San Mateo", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Atenas", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Naranjo", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Palmares", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Poás", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Orotina", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "San Carlos", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Zarcero", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Valverde Vega", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Upala", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Los Chiles", 2, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Guatuso", 2, NULL, NULL;
-
 EXEC dbo.pr_IATDistrito_Insertar "Alajuela",21,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "San José",21,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Carrizal",21,NULL,NULL;
@@ -296,16 +317,6 @@ EXEC dbo.pr_IATDistrito_Insertar "San Rafael",35,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Buena Vista",35,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Cote",35,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Katira",35,NULL,NULL;
-
-EXEC dbo.pr_IATCanton_Insertar "Cartago", 3, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Paraíso", 3, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "La Unión", 3, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Jiménez", 3, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Turrialba", 3, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Alvarado", 3, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Oreamuno", 3, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "El Guarco", 3, NULL, NULL;
-
 EXEC dbo.pr_IATDistrito_Insertar "Oriental",36,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Occidental",36,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Carmen",36,NULL,NULL;
@@ -356,18 +367,6 @@ EXEC dbo.pr_IATDistrito_Insertar "Tejar",43,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "San Isidro",43,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Tobosi",43,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Patio de Agua",43,NULL,NULL;
-
-EXEC dbo.pr_IATCanton_Insertar "Heredia", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Barva", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Santo Domingo", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Santa Bárbara", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "San Rafael", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "San Isidro", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Belén", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Flores", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "San Pablo", 4, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Sarapiquí", 4, NULL, NULL;
-
 EXEC dbo.pr_IATDistrito_Insertar "Heredia",44,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Mercedes",44,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "San Francisco",44,NULL,NULL;
@@ -415,36 +414,6 @@ EXEC dbo.pr_IATDistrito_Insertar "La Virgen",53,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Las Horquetas",53,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Llanureas del Gaspar",53,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Cureña",53,NULL,NULL;
-
-EXEC dbo.pr_IATCanton_Insertar "Liberia", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Nicoya", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Santa Cruz", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Bagaces", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Carrillo", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Cañas", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Abangares", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Tilarán", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Nandayure", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "La Cruz", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Hojancha", 5, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Puntarenas", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Esparza", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Buenos Aires", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Montes de Oro", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Osa", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Aguirre", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Golfito", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Coto Brus", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Corredores", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Garabito", 6, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Limón", 7, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Pococí", 7, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Río Blanco", 7, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Siquirres", 7, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Talamanca", 7, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Matina", 7, NULL, NULL;
-EXEC dbo.pr_IATCanton_Insertar "Guácimo", 7, NULL, NULL;
-
 EXEC dbo.pr_IATDistrito_Insertar "Liberia",54,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Cañas Dulces",54,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Mayorga",54,NULL,NULL;
@@ -489,3 +458,50 @@ EXEC dbo.pr_IATDistrito_Insertar "Santa Rosa",61,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Líbano",61,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Tierras Morenas",61,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Arenal",61,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Carmona",62,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Santa Rita",62,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Zapotal",62,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "San Pablo",62,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Porvenir",62,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Bejuco",62,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "La Cruz",63,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Santa Cecilia",63,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "La Garita",63,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Santa Elena",63,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Hojancha",64,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Monte Romo",64,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Puerto Carrillo",64,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Huacas",64,NULL,NULL;
+
+EXEC dbo.pr_IATDistrito_Insertar "Limón",75,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Valle la Estrella",75,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Río Blanco",75,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Matama",75,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Guápiles",76,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Jiménez",76,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Rita",76,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Roxana",76,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Cariari",76,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Colorado",76,NULL,NULL;
+
+
+EXEC dbo.pr_IATIdioma_Insertar "Inglés", NULL, NULL;
+EXEC dbo.pr_IATIdioma_Insertar "Francés", NULL, NULL;
+EXEC dbo.pr_IATIdioma_Insertar "Portugés", NULL, NULL;
+EXEC dbo.pr_IATIdioma_Insertar "Mandarín", NULL, NULL;
+EXEC dbo.pr_IATIdioma_Insertar "Otro", NULL, NULL;
+
+EXEC dbo.pr_IATTipoContacto_Insertar "Tel Habitación", NULL, NULL;
+EXEC dbo.pr_IATTipoContacto_Insertar "Tel Celular", NULL, NULL;
+EXEC dbo.pr_IATTipoContacto_Insertar "Correo-E", NULL, NULL;
+
+EXEC dbo.pr_IATTipoGuiaUso_Insertar "Documento", NULL, NULL;
+EXEC dbo.pr_IATTipoGuiaUso_Insertar "Video", NULL, NULL;
+EXEC dbo.pr_IATTipoGuiaUso_Insertar "Audio", NULL, NULL;
+
+EXEC dbo.pr_IATTipoTrabajo_Insertar "Voluntariado", NULL, NULL;
+EXEC dbo.pr_IATTipoTrabajo_Insertar "Remunerado", NULL, NULL;
+
+EXEC dbo.pr_IATTipoUsuario_Insertar "Adulto Mayor", NULL, NULL;
+EXEC dbo.pr_IATTipoUsuario_Insertar "Empresa", NULL, NULL;
+EXEC dbo.pr_IATTipoUsuario_Insertar "Administrador", NULL, NULL;
