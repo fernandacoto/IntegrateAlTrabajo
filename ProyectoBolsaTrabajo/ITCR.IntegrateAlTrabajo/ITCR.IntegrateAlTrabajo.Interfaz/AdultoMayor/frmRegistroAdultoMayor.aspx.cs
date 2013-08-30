@@ -41,28 +41,79 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
             drpSexo.Items.Add(ItemSexo2);
         }
 
+        private void cargarDropDownListProvincias()
+        {
+            drpProvincia.Items.Clear();
+            cIATProvinciaNegocios Provincia = new cIATProvinciaNegocios(1, "A", 2, "B");
+            DataTable TablaProvincia = Provincia.SeleccionarTodos();
+
+            for (int i = 0; i < TablaProvincia.Rows.Count; i++)
+            {
+                ListItem ItemProvincia = new ListItem(TablaProvincia.Rows[i]["Nom_Provincia"].ToString(), TablaProvincia.Rows[i]["Id_Provincia"].ToString());
+                drpProvincia.Items.Add(ItemProvincia);
+            }
+        }
+
+        private void cargarDropDownListCantones()
+        {
+            drpCanton.Items.Clear();
+            cIATCantonNegocios Canton = new cIATCantonNegocios(1, "A", 2, "B");
+
+            Canton.FK_IdProvincia = Int32.Parse(drpProvincia.SelectedValue);
+            DataTable TablaCanton = Canton.Buscar();
+
+            for (int i = 0; i < TablaCanton.Rows.Count; i++)
+            {
+                ListItem ItemCanton = new ListItem(TablaCanton.Rows[i]["Nom_Canton"].ToString(), TablaCanton.Rows[i]["Id_Canton"].ToString());
+                drpCanton.Items.Add(ItemCanton);
+            }
+        }
+
+        private void cargarDropDownListDistritos()
+        {
+            drpDistrito.Items.Clear();
+            cIATDistritoNegocios Distrito = new cIATDistritoNegocios(1, "A", 2, "B");
+
+            Distrito.FK_IdCanton = Int32.Parse(drpCanton.SelectedValue);
+            DataTable TablaDistrito = Distrito.Buscar();
+
+            for (int i = 0; i < TablaDistrito.Rows.Count; i++)
+            {
+                ListItem ItemDistrito = new ListItem(TablaDistrito.Rows[i]["Nom_Distrito"].ToString(), TablaDistrito.Rows[i]["Id_Distrito"].ToString());
+                drpDistrito.Items.Add(ItemDistrito);
+            }
+        }
+
         private void cargarTodosDropDownList()
         {
             cargarDropDownListSexo();
+            cargarDropDownListProvincias();
+            cargarDropDownListCantones();
+            cargarDropDownListDistritos();
         }
 
         #endregion
 
         protected void btnSiguiente1_Click(object sender, EventArgs e)
         {
-            Persona.Nom_Persona = txtNombrePersona.Text;
-            Persona.Apellido1 = txtApellido1.Text;
-            Persona.Apellido2 = txtApellido2.Text;
-            Persona.Num_Cedula = txtCedula.Text;
-            Persona.Fec_Nacimiento = DateTime.Parse(txtFechaNacimiento.Text);
-            Persona.Sexo = drpSexo.SelectedValue;
-            Persona.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
+            Validate("gvDatosPersonales");
 
-            TelefonoHabitacion.Detalle = txtTelefonoHabitacion.Text;
-            TelefonoCelular.Detalle = txtCelular.Text;
-            CorreoElectronico.Detalle = txtCorreoElectronico.Text;
+            if (Page.IsValid)
+            {
+                Persona.Nom_Persona = txtNombrePersona.Text;
+                Persona.Apellido1 = txtApellido1.Text;
+                Persona.Apellido2 = txtApellido2.Text;
+                Persona.Num_Cedula = txtCedula.Text;
+                Persona.Fec_Nacimiento = DateTime.Parse(txtFechaNacimiento.Text);
+                Persona.Sexo = drpSexo.SelectedValue;
+                Persona.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
 
-            mvRegistroAdultoMayor.ActiveViewIndex = 1;
+                TelefonoHabitacion.Detalle = txtTelefonoHabitacion.Text;
+                TelefonoCelular.Detalle = txtCelular.Text;
+                CorreoElectronico.Detalle = txtCorreoElectronico.Text;
+
+                mvRegistroAdultoMayor.ActiveViewIndex = 1;
+            }
         }
 
         protected void btnSiguiente2_Click(object sender, EventArgs e)
@@ -83,6 +134,17 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         protected void btnSiguiente5_Click(object sender, EventArgs e)
         {
             mvRegistroAdultoMayor.ActiveViewIndex = 5;
+        }
+
+        protected void drpProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cargarDropDownListCantones();
+            cargarDropDownListDistritos();
+        }
+
+        protected void drpCanton_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cargarDropDownListDistritos();
         }
     }
 }

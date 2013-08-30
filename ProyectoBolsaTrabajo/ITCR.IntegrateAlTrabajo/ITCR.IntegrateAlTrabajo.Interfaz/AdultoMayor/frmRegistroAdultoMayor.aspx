@@ -133,6 +133,25 @@
             <td class="style10">
                 &nbsp;</td>
             <td class="style11" colspan="5">
+                <asp:ValidationSummary ID="vsRegistroAdultoMayor" runat="server" 
+                    ForeColor="#CC0000" ValidationGroup="gvDatosPersonales" />
+                <asp:ValidationSummary runat="server" ID="vsDatosAutenticacionPersona" 
+                    ValidationGroup="gvDatosAutenticacion" ForeColor="#CC0000">
+                </asp:ValidationSummary>
+                <asp:ValidationSummary runat="server" ID="vsEstudios" ForeColor="#CC0000" 
+                    ValidationGroup="vgEstudios">
+                </asp:ValidationSummary>
+                <asp:ValidationSummary runat="server" ForeColor="#CC0000">
+                </asp:ValidationSummary>
+
+            </td>
+            <td class="style9">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style10">
+                &nbsp;</td>
+            <td class="style11" colspan="5">
                 <asp:MultiView ID="mvRegistroAdultoMayor" runat="server">
                     <asp:View ID="vPaso1" runat="server">
                         <table class="style14">
@@ -165,7 +184,9 @@
                                     <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtNombrePersona" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtNombrePersona" runat="server" ToolTip="Laura"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvNombrePersona" runat="server" ControlToValidate="txtNombrePersona"
+                                    ErrorMessage="El nombre de la persona es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -179,7 +200,9 @@
                                     <asp:Label ID="lblApellido1" runat="server" Text="Primer apellido"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtApellido1" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtApellido1" runat="server" ToolTip="Brenes"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvApellido1Persona" runat="server" ControlToValidate="txtApellido1"
+                                    ErrorMessage="El primer apellido es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -193,7 +216,9 @@
                                     <asp:Label ID="lblApellido2" runat="server" Text="Segundo apellido"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtApellido2" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtApellido2" runat="server" ToolTip="Fernández"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvApellido2Persona" runat="server" ControlToValidate="txtApellido2"
+                                    ErrorMessage="El segundo apellido es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -223,6 +248,11 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox>
+                                    <asp:RegularExpressionValidator ID="revCedula" runat="server" ControlToValidate="txtCedula"
+                                    ErrorMessage="El número de cédula introducido es inválido." ForeColor="Red" ValidationExpression="([0-9]*)"
+                                    ValidationGroup="gvDatosPersonales">*</asp:RegularExpressionValidator>
+                                    <asp:RequiredFieldValidator ID="rfvCedula" runat="server" ControlToValidate="txtCedula"
+                                    ErrorMessage="El número de cédula es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -237,6 +267,8 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtFechaNacimiento" runat="server" TextMode="Date"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvFechaNacimiento" runat="server" ControlToValidate="txtFechaNacimiento"
+                                    ErrorMessage="La fecha de nacimiento es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -252,6 +284,11 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtTelefonoHabitacion" runat="server" TextMode="Phone"></asp:TextBox>
+                                    <asp:RegularExpressionValidator ID="revTelefonoHabitacion" runat="server" ControlToValidate="txtTelefonoHabitacion"
+                                    ErrorMessage="El número de teléfono de habitación introducido es inválido." ForeColor="Red" ValidationExpression="([0-9]*)"
+                                    ValidationGroup="gvDatosPersonales">*</asp:RegularExpressionValidator>
+                                    <asp:RequiredFieldValidator ID="rfvTelefonoHabitacion" runat="server" ControlToValidate="txtTelefonoHabitacion"
+                                    ErrorMessage="El número de teléfono de habitación es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -266,6 +303,11 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtCelular" runat="server" TextMode="Phone"></asp:TextBox>
+                                    <asp:RegularExpressionValidator ID="revCelular" runat="server" ControlToValidate="txtCelular"
+                                    ErrorMessage="El número de celular introducido es inválido." ForeColor="Red" ValidationExpression="([0-9]*)"
+                                    ValidationGroup="gvDatosPersonales">*</asp:RegularExpressionValidator>
+                                    <asp:RequiredFieldValidator ID="rfvCelular" runat="server" ControlToValidate="txtCelular"
+                                    ErrorMessage="El número de celular es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -280,6 +322,8 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtCorreoElectronico" runat="server" TextMode="Email"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvCorreoElectronico" runat="server" ControlToValidate="txtCorreoElectronico"
+                                    ErrorMessage="El correo electrónico es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -293,7 +337,8 @@
                                     <asp:Label ID="lblProvincia" runat="server" Text="Provincia"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:DropDownList ID="drpProvincia" runat="server">
+                                    <asp:DropDownList ID="drpProvincia" runat="server" AutoPostBack="True" 
+                                        onselectedindexchanged="drpProvincia_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="style17">
@@ -308,7 +353,8 @@
                                     <asp:Label ID="lblCanton" runat="server" Text="Cantón"></asp:Label>
                                 </td>
                                 <td class="style31">
-                                    <asp:DropDownList ID="drpCanton" runat="server">
+                                    <asp:DropDownList ID="drpCanton" runat="server" AutoPostBack="True" 
+                                        onselectedindexchanged="drpCanton_SelectedIndexChanged">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="style32">
@@ -385,6 +431,8 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtNombreUsuario" runat="server"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtNombreUsuario"
+                                    ErrorMessage="El nombre de usuario es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosAutenticacion">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -399,6 +447,8 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContraseña"
+                                    ErrorMessage="La contraseña es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosAutenticacion">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -414,6 +464,8 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtConfirmacionContraseña" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvConfirmacionContraseña" runat="server" ControlToValidate="txtConfirmacionContraseña"
+                                    ErrorMessage="Es necesario confirmar la contraseña." ForeColor="Red" ValidationGroup="gvDatosAutenticacion">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -429,6 +481,8 @@
                                 </td>
                                 <td class="style25">
                                     <asp:TextBox ID="txtIndicioContraseña" runat="server"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvIndicioContraseña" runat="server" ControlToValidate="txtIndicioContraseña"
+                                    ErrorMessage="El indicio de contraseña es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosAutenticacion">*</asp:RequiredFieldValidator>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -505,6 +559,11 @@
                                                 </td>
                                                 <td class="style27">
                                                     <asp:TextBox ID="txtAñoInicialEstudio" runat="server"></asp:TextBox>
+                                                    <asp:RegularExpressionValidator ID="revAñoInicialEstudio" runat="server" ControlToValidate="txtAñoInicialEstudio"
+                                                    ErrorMessage="El año inicial introducido es inválido." ForeColor="Red" ValidationExpression="([0-9]{4})"
+                                                    ValidationGroup="gvEstudios">*</asp:RegularExpressionValidator>
+                                                    <asp:RequiredFieldValidator ID="rfvAñoInicial" runat="server" ControlToValidate="txtAñoInicialEstudio"
+                                                    ErrorMessage="El año inicial es un dato requerido." ForeColor="Red" ValidationGroup="gvEstudios">*</asp:RequiredFieldValidator>
                                                 </td>
                                                 <td class="style28">
                                                 </td>
@@ -513,6 +572,11 @@
                                                 </td>
                                                 <td class="style11">
                                                     <asp:TextBox ID="txtAñoFinalEstudio" runat="server"></asp:TextBox>
+                                                    <asp:RegularExpressionValidator ID="revAñoFinalEstudio" runat="server" ControlToValidate="txtAñoFinalEstudio"
+                                                    ErrorMessage="El año final introducido es inválido." ForeColor="Red" ValidationExpression="([0-9]{4})"
+                                                    ValidationGroup="gvEstudios">*</asp:RegularExpressionValidator>
+                                                    <asp:RequiredFieldValidator ID="rfvAñoFinal" runat="server" ControlToValidate="txtAñoFinalEstudio"
+                                                    ErrorMessage="El año final es un dato requerido." ForeColor="Red" ValidationGroup="gvEstudios">*</asp:RequiredFieldValidator>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -521,6 +585,8 @@
                                                 </td>
                                                 <td class="style27">
                                                     <asp:TextBox ID="txtInstitucionEstudio" runat="server"></asp:TextBox>
+                                                    <asp:RequiredFieldValidator ID="rfvInstitucionEstudio" runat="server" ControlToValidate="txtInstitucionEstudio"
+                                                    ErrorMessage="La institución es un dato requerido." ForeColor="Red" ValidationGroup="gvEstudios">*</asp:RequiredFieldValidator>
                                                 </td>
                                                 <td class="style28">
                                                     &nbsp;</td>
@@ -529,6 +595,8 @@
                                                 </td>
                                                 <td class="style11">
                                                     <asp:TextBox ID="txtTituloEstudio" runat="server"></asp:TextBox>
+                                                    <asp:RequiredFieldValidator ID="rfvTituloEstudio" runat="server" ControlToValidate="txtTituloEstudio"
+                                                    ErrorMessage="El título es un dato requerido." ForeColor="Red" ValidationGroup="gvEstudios">*</asp:RequiredFieldValidator>
                                                 </td>
                                             </tr>
                                             <tr>
