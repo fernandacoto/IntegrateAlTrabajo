@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de acceso a datos para tabla 'IATEmpresa'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: martes 27 de agosto de 2013, 09:45:38 p.m.
+// Fecha: viernes, 30 de agosto de 2013, 01:06:45 a.m.
 // Dado que esta clase implementa IDispose, las clases derivadas no deben hacerlo.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
@@ -46,6 +46,7 @@ namespace ITCR.IntegrateAlTrabajo.Datos
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -72,6 +73,7 @@ namespace ITCR.IntegrateAlTrabajo.Datos
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -122,6 +124,7 @@ namespace ITCR.IntegrateAlTrabajo.Datos
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Llena todas las propiedades que corresponden al campo en tabla con el valor de la fila seleccionada.
 		/// </remarks>
@@ -160,6 +163,7 @@ namespace ITCR.IntegrateAlTrabajo.Datos
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>

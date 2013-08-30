@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de LOGICA DE NEGOCIOS para tabla 'IATEmpresa'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: martes 27 de agosto de 2013, 09:45:38 p.m.
+// Fecha: viernes, 30 de agosto de 2013, 01:06:45 a.m.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
 
@@ -55,6 +55,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -74,7 +75,8 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 					+"Num_CedulaJuridica:"+Num_CedulaJuridica.ToString()+";"
 					+"Dsc_Empresa:"+Dsc_Empresa.ToString()+";"
 					+"FK_IdUsuario:"+FK_IdUsuario.ToString()+";"
-					+"PuntajePromedio:"+PuntajePromedio.ToString()+";";
+					+"PuntajePromedio:"+PuntajePromedio.ToString()+";"
+					+"FK_IdDistrito:"+FK_IdDistrito.ToString()+";";
 				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Insertar();
 			}
@@ -101,6 +103,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -120,7 +123,8 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 					+"Num_CedulaJuridica:"+Num_CedulaJuridica.ToString()+";"
 					+"Dsc_Empresa:"+Dsc_Empresa.ToString()+";"
 					+"FK_IdUsuario:"+FK_IdUsuario.ToString()+";"
-					+"PuntajePromedio:"+PuntajePromedio.ToString()+";";
+					+"PuntajePromedio:"+PuntajePromedio.ToString()+";"
+					+"FK_IdDistrito:"+FK_IdDistrito.ToString()+";";
 				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Actualizar();
 			}
@@ -188,6 +192,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Llena todas las propiedades que corresponden al campo en tabla con el valor de la fila seleccionada.
 		/// </remarks>
@@ -240,6 +245,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>

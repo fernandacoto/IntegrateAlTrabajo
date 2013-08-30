@@ -57,6 +57,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="AdultoMayor\frmOfrecerServicios.aspx" />
     <Content Include="AdultoMayor\frmRegistroAdultoMayor.aspx" />
+    <Content Include="Empresa\frmRegistroEmpresa.aspx" />
     <Content Include="Multimedia\banner_adultos_mayores.jpg" />
     <Content Include="Multimedia\Logo.png" />
     <Content Include="Styles\Site.css" />
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa\frmRegistroEmpresa.aspx.cs">
+      <DependentUpon>frmRegistroEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empresa\frmRegistroEmpresa.aspx.designer.cs">
+      <DependentUpon>frmRegistroEmpresa.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
