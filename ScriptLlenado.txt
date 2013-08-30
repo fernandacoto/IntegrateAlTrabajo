@@ -472,6 +472,7 @@ EXEC dbo.pr_IATDistrito_Insertar "Hojancha",64,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Monte Romo",64,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Puerto Carrillo",64,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Huacas",64,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Prueba",64,NULL,NULL;
 
 EXEC dbo.pr_IATDistrito_Insertar "Limón",75,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Valle la Estrella",75,NULL,NULL;
