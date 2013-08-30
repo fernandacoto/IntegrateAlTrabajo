@@ -37,7 +37,19 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             Empresa.Dsc_Empresa = txtDescripcion.Text;
             CorreoElectronico.Detalle = txtEmail.Text;
             Telefono.Detalle = txtTelefono.Text;
-            Empresa.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
+            //Empresa.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
+
+            mvRegistroEmpresa.ActiveViewIndex = 1;
+        }
+
+        protected void btnSiguientePaso2_Click(object sender, EventArgs e)
+        {
+            mvRegistroEmpresa.ActiveViewIndex = 2;
+        }
+
+        protected void btnFinalizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

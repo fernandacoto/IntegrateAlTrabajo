@@ -15,7 +15,7 @@ using System.Data.SqlTypes;
 using System.Data.SqlClient;
 using ITCR.IntegrateAlTrabajo.Base;
 using ITCR.IntegrateAlTrabajo.Datos;
-using ITCR.IntegrateAlTrabajo.Negocios.wsSeguridad;
+//using ITCR.IntegrateAlTrabajo.Negocios.wsSeguridad;
 
 namespace ITCR.IntegrateAlTrabajo.Negocios
 {
@@ -66,7 +66,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		public override bool Insertar()
 		{
 			string operacion;
-			SeguridadSoapClient wsseg = new SeguridadSoapClient();
+			//SeguridadSoapClient wsseg = new SeguridadSoapClient();
 			try
 			{
 				//Construir aqui el string a guardar en la bitacora.
@@ -77,14 +77,14 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 					+"FK_IdUsuario:"+FK_IdUsuario.ToString()+";"
 					+"PuntajePromedio:"+PuntajePromedio.ToString()+";"
 					+"FK_IdDistrito:"+FK_IdDistrito.ToString()+";";
-				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
+				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Insertar();
 			}
 			catch (Exception ex)
 			{
 				//Construir el string a guardar en la bitácora en caso de error.
 				operacion = "Error Insertar cIATEmpresa;"+ex.Message;
-				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
+				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
 				throw ex;
 			}
 		}
@@ -113,7 +113,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		public override bool Actualizar()
 		{
 			string operacion;
-			SeguridadSoapClient wsseg = new SeguridadSoapClient();
+			//SeguridadSoapClient wsseg = new SeguridadSoapClient();
 			try
 			{
 				//Construir aqui el string a guardar en la bitacora.
@@ -125,14 +125,14 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 					+"FK_IdUsuario:"+FK_IdUsuario.ToString()+";"
 					+"PuntajePromedio:"+PuntajePromedio.ToString()+";"
 					+"FK_IdDistrito:"+FK_IdDistrito.ToString()+";";
-				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
+				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Actualizar();
 			}
 			catch (Exception ex)
 			{
 				//Construir el string a guardar en la bitácora en caso de error.
 				operacion = "Error Actualizar cIATEmpresa;"+ex.Message;
-				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
+				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
 				throw ex;
 			}
 		}
@@ -155,20 +155,20 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		public override bool Eliminar()
 		{
 			string operacion;
-			SeguridadSoapClient wsseg = new SeguridadSoapClient();
+			//SeguridadSoapClient wsseg = new SeguridadSoapClient();
 			try
 			{
 				//Construir aqui el string a guardar en la bitacora.
 				operacion = "Eliminar cIATEmpresa;"
 					+"Id_Empresa:"+Id_Empresa.ToString()+";";
-				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
+				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Eliminar();
 			}
 			catch (Exception ex)
 			{
 				//Construir el string a guardar en la bitácora en caso de error.
 				operacion = "Error Eliminar cIATEmpresa;"+ex.Message;
-				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
+				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
 				throw ex;
 			}
 		}

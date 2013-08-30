@@ -244,7 +244,7 @@
                                     <asp:Label ID="lblCanton" runat="server" Text="Cantón"></asp:Label>
                                 </td>
                                 <td class="style18">
-                                    <asp:DropDownList ID="drpCanton" runat="server" Height="16px" Width="250px">
+                                    <asp:DropDownList ID="drpCanton" runat="server" Height="22px" Width="250px">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="style14">
@@ -259,7 +259,7 @@
                                     <asp:Label ID="lblDistrito" runat="server" Text="Distrito"></asp:Label>
                                 </td>
                                 <td class="style18">
-                                    <asp:DropDownList ID="drpDistrito" runat="server" Height="16px" Width="250px">
+                                    <asp:DropDownList ID="drpDistrito" runat="server" Height="22px" Width="250px">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="style14">
@@ -287,7 +287,6 @@
                             </tr>
                         </table>
                     </asp:View>
-                    <br />
                     <asp:View ID="vPaso2" runat="server">
                         <table class="style11">
                             <tr>
@@ -375,12 +374,12 @@
                                 <td class="style9">
                                     <asp:Button ID="btnCancelarPaso2" runat="server" Text="Cancelar" />
                                     &nbsp;
-                                    <asp:Button ID="btnSiguientePaso2" runat="server" Text="Siguiente" />
+                                    <asp:Button ID="btnSiguientePaso2" runat="server" 
+                                        onclick="btnSiguientePaso2_Click" Text="Siguiente" />
                                 </td>
                             </tr>
                         </table>
                     </asp:View>
-                    <br />
                     <asp:View ID="vPaso3" runat="server">
                         <table class="style11">
                             <tr>
@@ -451,12 +450,12 @@
                                 <td class="style9">
                                     <asp:Button ID="btnCancelarPaso3" runat="server" Text="Cancelar" />
                                     &nbsp;
-                                    <asp:Button ID="btnFinalizar" runat="server" Text="Finalizar" />
+                                    <asp:Button ID="btnFinalizar" runat="server" onclick="btnFinalizar_Click" 
+                                        Text="Finalizar" />
                                 </td>
                             </tr>
                         </table>
                     </asp:View>
-                    <br />
                 </asp:MultiView>
             </td>
             <td class="style8">
