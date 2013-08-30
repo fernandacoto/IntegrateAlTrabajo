@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de LOGICA DE NEGOCIOS para tabla 'IATEmpresa'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: martes 27 de agosto de 2013, 09:45:38 p.m.
+// Fecha: viernes, 30 de agosto de 2013, 01:06:45 a.m.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
 
@@ -15,7 +15,7 @@ using System.Data.SqlTypes;
 using System.Data.SqlClient;
 using ITCR.IntegrateAlTrabajo.Base;
 using ITCR.IntegrateAlTrabajo.Datos;
-//using ITCR.IntegrateAlTrabajo.Negocios.wsSeguridad;
+using ITCR.IntegrateAlTrabajo.Negocios.wsSeguridad;
 
 namespace ITCR.IntegrateAlTrabajo.Negocios
 {
@@ -55,6 +55,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -65,7 +66,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		public override bool Insertar()
 		{
 			string operacion;
-			//SeguridadSoapClient wsseg = new SeguridadSoapClient();
+			SeguridadSoapClient wsseg = new SeguridadSoapClient();
 			try
 			{
 				//Construir aqui el string a guardar en la bitacora.
@@ -74,15 +75,16 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 					+"Num_CedulaJuridica:"+Num_CedulaJuridica.ToString()+";"
 					+"Dsc_Empresa:"+Dsc_Empresa.ToString()+";"
 					+"FK_IdUsuario:"+FK_IdUsuario.ToString()+";"
-					+"PuntajePromedio:"+PuntajePromedio.ToString()+";";
-				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
+					+"PuntajePromedio:"+PuntajePromedio.ToString()+";"
+					+"FK_IdDistrito:"+FK_IdDistrito.ToString()+";";
+				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Insertar();
 			}
 			catch (Exception ex)
 			{
 				//Construir el string a guardar en la bitácora en caso de error.
 				operacion = "Error Insertar cIATEmpresa;"+ex.Message;
-				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
+				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
 				throw ex;
 			}
 		}
@@ -101,6 +103,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -110,7 +113,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		public override bool Actualizar()
 		{
 			string operacion;
-			//SeguridadSoapClient wsseg = new SeguridadSoapClient();
+			SeguridadSoapClient wsseg = new SeguridadSoapClient();
 			try
 			{
 				//Construir aqui el string a guardar en la bitacora.
@@ -120,15 +123,16 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 					+"Num_CedulaJuridica:"+Num_CedulaJuridica.ToString()+";"
 					+"Dsc_Empresa:"+Dsc_Empresa.ToString()+";"
 					+"FK_IdUsuario:"+FK_IdUsuario.ToString()+";"
-					+"PuntajePromedio:"+PuntajePromedio.ToString()+";";
-				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
+					+"PuntajePromedio:"+PuntajePromedio.ToString()+";"
+					+"FK_IdDistrito:"+FK_IdDistrito.ToString()+";";
+				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Actualizar();
 			}
 			catch (Exception ex)
 			{
 				//Construir el string a guardar en la bitácora en caso de error.
 				operacion = "Error Actualizar cIATEmpresa;"+ex.Message;
-				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
+				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
 				throw ex;
 			}
 		}
@@ -151,20 +155,20 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		public override bool Eliminar()
 		{
 			string operacion;
-			//SeguridadSoapClient wsseg = new SeguridadSoapClient();
+			SeguridadSoapClient wsseg = new SeguridadSoapClient();
 			try
 			{
 				//Construir aqui el string a guardar en la bitacora.
 				operacion = "Eliminar cIATEmpresa;"
 					+"Id_Empresa:"+Id_Empresa.ToString()+";";
-				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
+				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Eliminar();
 			}
 			catch (Exception ex)
 			{
 				//Construir el string a guardar en la bitácora en caso de error.
 				operacion = "Error Eliminar cIATEmpresa;"+ex.Message;
-				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
+				wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.Error, _ID_USUARIOBitacora,operacion);
 				throw ex;
 			}
 		}
@@ -188,6 +192,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Llena todas las propiedades que corresponden al campo en tabla con el valor de la fila seleccionada.
 		/// </remarks>
@@ -240,6 +245,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Dsc_Empresa</LI>
 		///		 <LI>FK_IdUsuario</LI>
 		///		 <LI>PuntajePromedio</LI>
+		///		 <LI>FK_IdDistrito</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>

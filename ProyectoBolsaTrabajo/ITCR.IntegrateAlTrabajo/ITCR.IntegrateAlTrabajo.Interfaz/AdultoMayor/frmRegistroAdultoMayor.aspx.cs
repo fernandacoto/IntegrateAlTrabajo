@@ -84,5 +84,10 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             mvRegistroAdultoMayor.ActiveViewIndex = 5;
         }
+
+        protected void mvRegistroAdultoMayor_ActiveViewChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
