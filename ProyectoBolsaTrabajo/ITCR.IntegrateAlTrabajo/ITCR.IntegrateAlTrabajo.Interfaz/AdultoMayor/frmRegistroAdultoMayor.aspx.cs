@@ -118,12 +118,22 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
         protected void btnSiguiente2_Click(object sender, EventArgs e)
         {
-            mvRegistroAdultoMayor.ActiveViewIndex = 2;
+            Validate("gvDatosAutenticacion");
+
+            if (Page.IsValid)
+            {
+                mvRegistroAdultoMayor.ActiveViewIndex = 2;
+            }
         }
 
         protected void btnSiguiente3_Click(object sender, EventArgs e)
         {
-            mvRegistroAdultoMayor.ActiveViewIndex = 3;
+            Validate("gvEstudios");
+
+            if (Page.IsValid)
+            {
+                mvRegistroAdultoMayor.ActiveViewIndex = 3;
+            }
         }
 
         protected void btnSiguiente4_Click(object sender, EventArgs e)
