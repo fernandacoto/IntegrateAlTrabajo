@@ -484,7 +484,24 @@ EXEC dbo.pr_IATDistrito_Insertar "Rita",76,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Roxana",76,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Cariari",76,NULL,NULL;
 EXEC dbo.pr_IATDistrito_Insertar "Colorado",76,NULL,NULL;
-
+EXEC dbo.pr_IATDistrito_Insertar "Siquirres",77,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Pacuarito",77,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Florida",77,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Germania",77,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Cairo",77,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Alegría",77,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Bratsi",78,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Sixaola",78,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Cahuita",78,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Telire",78,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Matina",79,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Batán",79,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Carrandi",79,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Guácimo",80,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Mercedes",80,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Pocora",80,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Río Jiménez",80,NULL,NULL;
+EXEC dbo.pr_IATDistrito_Insertar "Duacarí",80,NULL,NULL;
 
 EXEC dbo.pr_IATIdioma_Insertar "Inglés", NULL, NULL;
 EXEC dbo.pr_IATIdioma_Insertar "Francés", NULL, NULL;
