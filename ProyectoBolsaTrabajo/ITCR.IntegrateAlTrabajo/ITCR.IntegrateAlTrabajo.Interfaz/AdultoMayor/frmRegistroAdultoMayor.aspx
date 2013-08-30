@@ -389,7 +389,8 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    <asp:Button ID="btnCancelar1" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelar1" runat="server" Text="Cancelar" 
+                                        onclick="btnCancelar1_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente1" runat="server" onclick="btnSiguiente1_Click" 
                                         Text="Siguiente" />
