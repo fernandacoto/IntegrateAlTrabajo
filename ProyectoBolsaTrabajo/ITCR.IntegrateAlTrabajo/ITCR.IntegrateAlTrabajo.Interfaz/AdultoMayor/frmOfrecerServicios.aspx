@@ -76,6 +76,33 @@
             width: 117px;
             height: 25px;
         }
+        .style30
+        {
+            height: 19px;
+        }
+        .style31
+        {
+            height: 19px;
+        }
+        .style32
+        {
+            height: 19px;
+            width: 20px;
+        }
+        .style33
+        {
+            height: 19px;
+            width: 250px;
+        }
+        .style34
+        {
+            height: 1061px;
+            width: 15px;
+        }
+        .style35
+        {
+            height: 1061px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -113,9 +140,14 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="style5">
+            <td class="style30" colspan="7">
+                <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style34">
                 &nbsp;</td>
-            <td class="style6" colspan="5">
+            <td class="style35" colspan="5">
                 <asp:MultiView ID="mvOfrecerServicios" runat="server">
                     <asp:View ID="vPaso1" runat="server">
                         <table class="style14">
@@ -446,7 +478,7 @@
                     <br />
                 </asp:MultiView>
             </td>
-            <td class="style4">
+            <td class="style34">
                 &nbsp;</td>
         </tr>
         <tr>

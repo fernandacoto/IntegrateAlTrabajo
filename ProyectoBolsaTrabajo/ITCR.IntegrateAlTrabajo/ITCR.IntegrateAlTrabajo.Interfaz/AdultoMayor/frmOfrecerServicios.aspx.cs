@@ -55,6 +55,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
         protected void btnSiguiente3_Click(object sender, EventArgs e)
         {
+            Validate("gvServicios");
             mvOfrecerServicios.ActiveViewIndex = 1;
         }
 
