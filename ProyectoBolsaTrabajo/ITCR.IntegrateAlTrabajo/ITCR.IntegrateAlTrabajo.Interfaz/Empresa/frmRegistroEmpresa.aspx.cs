@@ -97,8 +97,15 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                 Empresa.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
                 Empresa.FK_IdUsuario = 2;
                 Empresa.PuntajePromedio = 0.00;
-
-                mvRegistroEmpresa.ActiveViewIndex = 1;
+                DataTable TablaNomEmpresa = Empresa.Buscar();
+                if (TablaNomEmpresa.Rows.Count.Equals(0))
+                {
+                    mvRegistroEmpresa.ActiveViewIndex = 1;
+                }
+                else 
+                {
+                    Response.Write(@"<SCRIPT LANGUAGE=""JavaScript"">alert('El nombre de empresa ya existe')</SCRIPT>");
+                }
             }
         }
 
