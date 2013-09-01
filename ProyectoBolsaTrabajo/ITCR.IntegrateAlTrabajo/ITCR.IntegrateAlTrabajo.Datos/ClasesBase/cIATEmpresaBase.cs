@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de acceso a datos para tabla 'IATEmpresa'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: viernes, 30 de agosto de 2013, 01:06:45 a.m.
+// Fecha: sábado, 31 de agosto de 2013, 10:35:51 p.m.
 // Dado que esta clase implementa IDispose, las clases derivadas no deben hacerlo.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
@@ -24,9 +24,9 @@ namespace ITCR.IntegrateAlTrabajo.Base
 	public class cIATEmpresaBase : cBDInteraccionBase
 	{
 		#region Declaraciones de miembros de la clase
-			private SqlDecimal		_puntajePromedio;
-			private SqlInt32		_id_Empresa, _fK_IdUsuario, _fK_IdUsuarioOld, _fK_IdDistrito, _fK_IdDistritoOld;
-			private SqlString		_nom_Empresa, _num_CedulaJuridica, _dsc_Empresa;
+			private SqlDouble		_puntajePromedio;
+			private SqlInt32		_fK_IdDistrito, _fK_IdDistritoOld, _fK_IdUsuario, _fK_IdUsuarioOld, _id_Empresa;
+			private SqlString		_dsc_Empresa, _num_CedulaJuridica, _nom_Empresa;
 		#endregion
 
 
@@ -74,7 +74,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sNum_CedulaJuridica", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _num_CedulaJuridica));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sDsc_Empresa", SqlDbType.VarChar, 300, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _dsc_Empresa));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdUsuario));
-				cmdAEjecutar.Parameters.Add(new SqlParameter("@dcPuntajePromedio", SqlDbType.Decimal, 5, ParameterDirection.Input, false, 2, 2, "", DataRowVersion.Proposed, _puntajePromedio));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@fPuntajePromedio", SqlDbType.Float, 8, ParameterDirection.Input, false, 38, 0, "", DataRowVersion.Proposed, _puntajePromedio));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdDistrito", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdDistrito));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_Empresa", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _id_Empresa));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iCodError", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
@@ -158,7 +158,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sNum_CedulaJuridica", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _num_CedulaJuridica));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sDsc_Empresa", SqlDbType.VarChar, 300, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _dsc_Empresa));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdUsuario));
-				cmdAEjecutar.Parameters.Add(new SqlParameter("@dcPuntajePromedio", SqlDbType.Decimal, 5, ParameterDirection.Input, false, 2, 2, "", DataRowVersion.Proposed, _puntajePromedio));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@fPuntajePromedio", SqlDbType.Float, 8, ParameterDirection.Input, false, 38, 0, "", DataRowVersion.Proposed, _puntajePromedio));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdDistrito", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdDistrito));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iCodError", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
 
@@ -632,7 +632,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 					_num_CedulaJuridica = (string)toReturn.Rows[0]["Num_CedulaJuridica"];
 					_dsc_Empresa = (string)toReturn.Rows[0]["Dsc_Empresa"];
 					_fK_IdUsuario = (Int32)toReturn.Rows[0]["FK_IdUsuario"];
-					_puntajePromedio = (Decimal)toReturn.Rows[0]["PuntajePromedio"];
+					_puntajePromedio = (double)toReturn.Rows[0]["PuntajePromedio"];
 					_fK_IdDistrito = (Int32)toReturn.Rows[0]["FK_IdDistrito"];
 				}
 				return toReturn;
@@ -907,7 +907,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sNum_CedulaJuridica", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _num_CedulaJuridica));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sDsc_Empresa", SqlDbType.VarChar, 300, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _dsc_Empresa));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdUsuario));
-				cmdAEjecutar.Parameters.Add(new SqlParameter("@dcPuntajePromedio", SqlDbType.Decimal, 5, ParameterDirection.Input, false, 2, 2, "", DataRowVersion.Proposed, _puntajePromedio));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@fPuntajePromedio", SqlDbType.Float, 8, ParameterDirection.Input, false, 38, 0, "", DataRowVersion.Proposed, _puntajePromedio));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdDistrito", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdDistrito));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iCodError", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
 
@@ -1061,7 +1061,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 		}
 
 
-		public SqlDecimal PuntajePromedio
+		public SqlDouble PuntajePromedio
 		{
 			get
 			{
@@ -1069,7 +1069,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 			}
 			set
 			{
-				SqlDecimal puntajePromedioTmp = (SqlDecimal)value;
+				SqlDouble puntajePromedioTmp = (SqlDouble)value;
 				if(puntajePromedioTmp.IsNull)
 				{
 					throw new ArgumentOutOfRangeException("PuntajePromedio", "PuntajePromedio can't be NULL");

@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de acceso a datos para tabla 'IATEmpresa'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: viernes, 30 de agosto de 2013, 01:06:45 a.m.
+// Fecha: sábado, 31 de agosto de 2013, 10:35:51 p.m.
 // Dado que esta clase implementa IDispose, las clases derivadas no deben hacerlo.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
