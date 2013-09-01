@@ -18,6 +18,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         private static cIATContactoNegocios CorreoElectronico = new cIATContactoNegocios(1, "A", 2, "B");
         private static cIATCalificacionEmpresaNegocios Calificacion = new cIATCalificacionEmpresaNegocios(1, "A", 2, "B");
         private static cIATOfertaTrabajoNegocios Oferta = new cIATOfertaTrabajoNegocios(1, "A", 2, "B");
+        private static cIATOpinionNegocios Opinion = new cIATOpinionNegocios(1, "A", 2, "B");
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -64,7 +65,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-           /* Usuario.Nom_Usuario = Convert.ToString(Session["Nombre_Usuario"]);
+            Usuario.Nom_Usuario = Convert.ToString(Session["Nombre_Usuario"]);
             DataTable tablaUsuario = Usuario.Buscar();
             Int16 IdUsuario = 0;
 
@@ -72,6 +73,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             {
                 IdUsuario = Int16.Parse(tablaUsuario.Rows[0]["Id_Usuario"].ToString());
             }
+            Telefono.FK_IdUsuario = IdUsuario;
+            Telefono.FK_IdTipoContacto = 1;
+            Telefono.Eliminar();
+            CorreoElectronico.FK_IdUsuario = IdUsuario;
+            CorreoElectronico.FK_IdTipoContacto = 3;
+            CorreoElectronico.Eliminar();
+            Empresa.FK_IdUsuario = IdUsuario;
             DataTable tablaEmpresa = Empresa.Buscar();
             Int16 IdEmpresa = 0;
             if (tablaEmpresa.Rows.Count > 0)
@@ -80,22 +88,15 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             }
             Calificacion.FK_idEmpresa = IdEmpresa;
             Calificacion.Eliminar();
+            Opinion.FK_IdUsuario = IdUsuario;
+            Opinion.Eliminar();
             Oferta.FK_IdEmpresa = IdEmpresa;
             Oferta.Eliminar();
-            Empresa.FK_IdUsuario = IdUsuario;
             Empresa.Id_Empresa = IdEmpresa;
             Empresa.Eliminar();
             Usuario.Id_Usuario = IdUsuario;
             Usuario.Eliminar();
-            Telefono.FK_IdUsuario = IdUsuario;
-            Telefono.FK_IdTipoContacto = 1;
-            Telefono.Eliminar();
-            CorreoElectronico.FK_IdUsuario = IdUsuario;
-            CorreoElectronico.FK_IdTipoContacto = 3;
-            CorreoElectronico.Eliminar();
-            Usuario.Id_Usuario = IdUsuario;
-            Usuario.Eliminar();
-            Response.Redirect("frmAgregarEmpresa.aspx");*/
+            Response.Redirect("frmAgregarEmpresa.aspx");
         }
     }
 }

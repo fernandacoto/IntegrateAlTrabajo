@@ -50,6 +50,50 @@
         {
             width: 120px;
         }
+        .style22
+        {
+            width: 116px;
+            height: 25px;
+        }
+        .style23
+        {
+            width: 298px;
+            height: 25px;
+        }
+        .style24
+        {
+            width: 31px;
+            height: 25px;
+        }
+        .style25
+        {
+            width: 120px;
+            height: 25px;
+        }
+        .style26
+        {
+            width: 116px;
+            height: 24px;
+        }
+        .style27
+        {
+            width: 298px;
+            height: 24px;
+        }
+        .style28
+        {
+            width: 31px;
+            height: 24px;
+        }
+        .style29
+        {
+            width: 120px;
+            height: 24px;
+        }
+        .style30
+        {
+            height: 24px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -79,74 +123,129 @@
                     BorderStyle="Solid">
                     <table class="style16">
                         <tr>
-                            <td class="style17">
+                            <td class="style22">
                                 <asp:Label ID="lblNombreEmpresa" runat="server" Text="Nombre"></asp:Label>
                             </td>
-                            <td class="style19">
+                            <td class="style23">
                                 <asp:Label ID="lblContenidoNombreEmpresa" runat="server" Text="Label"></asp:Label>
                             </td>
-                            <td class="style20">
-                                &nbsp;</td>
-                            <td class="style21">
-                                &nbsp;</td>
-                            <td>
-                                &nbsp;</td>
+                            <td class="style24">
+                            </td>
+                            <td class="style25">
+                            </td>
+                            <td class="style9">
+                            </td>
                         </tr>
                         <tr>
-                            <td class="style17">
+                            <td class="style22">
                                 <asp:Label ID="lblCedulaJuridica" runat="server" Text="Cédula Jurídica"></asp:Label>
                             </td>
-                            <td class="style19">
+                            <td class="style23">
                                 <asp:Label ID="lblContenidoCedulaJuridica" runat="server" Text="Label"></asp:Label>
                             </td>
-                            <td class="style20">
-                                &nbsp;</td>
-                            <td class="style21">
-                                &nbsp;</td>
-                            <td>
-                                &nbsp;</td>
+                            <td class="style24">
+                            </td>
+                            <td class="style25">
+                            </td>
+                            <td class="style9">
+                            </td>
                         </tr>
                         <tr>
-                            <td class="style17">
+                            <td class="style22">
                                 <asp:Label ID="lblDescripcion" runat="server" Text="Descripción"></asp:Label>
                             </td>
-                            <td class="style19">
+                            <td class="style23">
                                 <asp:Label ID="lblContenidoDescripcion" runat="server" Text="Label"></asp:Label>
                             </td>
-                            <td class="style20">
-                                &nbsp;</td>
-                            <td class="style21">
-                                &nbsp;</td>
-                            <td>
-                                &nbsp;</td>
+                            <td class="style24">
+                            </td>
+                            <td class="style25">
+                            </td>
+                            <td class="style9">
+                            </td>
                         </tr>
                         <tr>
-                            <td class="style17">
+                            <td class="style22">
                                 <asp:Label ID="lblTelefono" runat="server" Text="Teléfono"></asp:Label>
                             </td>
-                            <td class="style19">
+                            <td class="style23">
                                 <asp:Label ID="lblContenidoTelefono" runat="server" Text="Label"></asp:Label>
                             </td>
-                            <td class="style20">
-                                &nbsp;</td>
-                            <td class="style21">
-                                &nbsp;</td>
-                            <td>
-                                &nbsp;</td>
+                            <td class="style24">
+                            </td>
+                            <td class="style25">
+                            </td>
+                            <td class="style9">
+                            </td>
                         </tr>
                         <tr>
-                            <td class="style17">
+                            <td class="style22">
                                 <asp:Label ID="lblEmail" runat="server" Text="Correo electrónico"></asp:Label>
                             </td>
-                            <td class="style19">
+                            <td class="style23">
                                 <asp:Label ID="lblContenidoEmail" runat="server" Text="Label"></asp:Label>
                             </td>
-                            <td class="style20">
+                            <td class="style24">
+                            </td>
+                            <td class="style25">
+                            </td>
+                            <td class="style9">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style22">
+                                <asp:Label ID="lblProvincia" runat="server" Text="Provincia"></asp:Label>
+                            </td>
+                            <td class="style23">
+                                <asp:Label ID="lblContenidoProvincia" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td class="style24">
+                            </td>
+                            <td class="style25">
+                            </td>
+                            <td class="style9">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style22">
+                                <asp:Label ID="lblContenidoCanton" runat="server" Text="Cantón"></asp:Label>
+                            </td>
+                            <td class="style23">
+                                <asp:Label ID="lblContenidoCant" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td class="style24">
+                            </td>
+                            <td class="style25">
+                            </td>
+                            <td class="style9">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style22">
+                                <asp:Label ID="lblDistrito" runat="server" Text="Distrito"></asp:Label>
+                            </td>
+                            <td class="style23">
+                                <asp:Label ID="lblContenidoDistrito" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td class="style24">
+                            </td>
+                            <td class="style25">
+                            </td>
+                            <td class="style9">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style26">
+                            </td>
+                            <td class="style27">
                                 &nbsp;</td>
-                            <td class="style21">
-                                &nbsp;</td>
-                            <td>
-                                &nbsp;</td>
+                            <td class="style28">
+                            </td>
+                            <td class="style29">
+                            </td>
+                            <td class="style30">
+                            </td>
                         </tr>
                         <tr>
                             <td class="style17">
@@ -158,23 +257,11 @@
                             <td class="style21">
                                 &nbsp;</td>
                             <td>
-                                <asp:Button ID="btnEditar" runat="server" Text="Editar Perfil" />
+                                <asp:Button ID="btnEditar" runat="server" Text="Editar Perfil" Width="101px" />
                                 &nbsp;
                                 <asp:Button ID="btnEliminar" runat="server" onclick="btnEliminar_Click" 
                                     Text="Eliminar Cuenta" />
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="style17">
-                                &nbsp;</td>
-                            <td class="style19">
-                                &nbsp;</td>
-                            <td class="style20">
-                                &nbsp;</td>
-                            <td class="style21">
-                                &nbsp;</td>
-                            <td>
-                                &nbsp;</td>
                         </tr>
                     </table>
                 </asp:Panel>
