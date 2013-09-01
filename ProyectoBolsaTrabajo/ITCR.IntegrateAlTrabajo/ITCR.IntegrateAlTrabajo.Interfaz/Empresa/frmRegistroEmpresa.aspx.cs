@@ -118,6 +118,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                 Usuario.Contrasenna = txtContraseña.Text;
                 Usuario.Indicio_Contrasenna = txtIndicioContraseña.Text;
                 Usuario.FK_IdTipoUsuario = 2;
+                Usuario.Estado = 2;
                 DataTable TablaNomUsuario = Usuario.Buscar();
                 if (TablaNomUsuario.Rows.Count.Equals(0))
                 {

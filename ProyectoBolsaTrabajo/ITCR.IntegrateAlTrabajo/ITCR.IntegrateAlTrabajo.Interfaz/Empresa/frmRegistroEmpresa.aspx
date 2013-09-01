@@ -238,7 +238,8 @@
                                 </td>
                                 <td class="style18">
                                     <asp:DropDownList ID="drpProvincia" runat="server" Width="250px" 
-                                        onselectedindexchanged="drpProvincia_SelectedIndexChanged">
+                                        onselectedindexchanged="drpProvincia_SelectedIndexChanged" 
+                                        AutoPostBack="True">
                                     </asp:DropDownList>
                                 </td>
                                 <td class="style14">

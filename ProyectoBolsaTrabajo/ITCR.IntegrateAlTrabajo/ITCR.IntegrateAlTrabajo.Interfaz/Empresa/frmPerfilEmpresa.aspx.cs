@@ -24,7 +24,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "movi";
+                Session["Nombre_Usuario"] = "insempresa";
                 cargar_datos_usuario();
             }
         }
@@ -67,36 +67,17 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         {
             Usuario.Nom_Usuario = Convert.ToString(Session["Nombre_Usuario"]);
             DataTable tablaUsuario = Usuario.Buscar();
-            Int16 IdUsuario = 0;
 
             if (tablaUsuario.Rows.Count > 0)
             {
-                IdUsuario = Int16.Parse(tablaUsuario.Rows[0]["Id_Usuario"].ToString());
+                Usuario.Id_Usuario = Int16.Parse(tablaUsuario.Rows[0]["Id_Usuario"].ToString());
+                Usuario.Nom_Usuario = tablaUsuario.Rows[0]["Nom_Usuario"].ToString();
+                Usuario.Contrasenna = tablaUsuario.Rows[0]["Contrasenna"].ToString();
+                Usuario.Indicio_Contrasenna = tablaUsuario.Rows[0]["Indicio_Contrasenna"].ToString();
+                Usuario.FK_IdTipoUsuario = Int16.Parse(tablaUsuario.Rows[0]["FK_IdTipoUsuario"].ToString());
             }
-            Telefono.FK_IdUsuario = IdUsuario;
-            Telefono.FK_IdTipoContacto = 1;
-            Telefono.Eliminar();
-            CorreoElectronico.FK_IdUsuario = IdUsuario;
-            CorreoElectronico.FK_IdTipoContacto = 3;
-            CorreoElectronico.Eliminar();
-            Empresa.FK_IdUsuario = IdUsuario;
-            DataTable tablaEmpresa = Empresa.Buscar();
-            Int16 IdEmpresa = 0;
-            if (tablaEmpresa.Rows.Count > 0)
-            {
-                IdEmpresa = Int16.Parse(tablaEmpresa.Rows[0]["Id_Empresa"].ToString());
-            }
-            Calificacion.FK_idEmpresa = IdEmpresa;
-            Calificacion.Eliminar();
-            Opinion.FK_IdUsuario = IdUsuario;
-            Opinion.Eliminar();
-            Oferta.FK_IdEmpresa = IdEmpresa;
-            Oferta.Eliminar();
-            Empresa.Id_Empresa = IdEmpresa;
-            Empresa.Eliminar();
-            Usuario.Id_Usuario = IdUsuario;
-            Usuario.Eliminar();
-            Response.Redirect("frmAgregarEmpresa.aspx");
+            Usuario.Estado = 3;
+            Usuario.Actualizar();
         }
     }
 }
