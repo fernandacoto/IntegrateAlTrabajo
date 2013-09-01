@@ -610,7 +610,8 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:Button ID="btnAgregarEstudio" runat="server" Text="Agregar" />
+                                                    <asp:Button ID="btnAgregarEstudio" runat="server" Text="Agregar" 
+                                                        onclick="btnAgregarEstudio_Click" />
                                                 </td>
                                             </tr>
                                         </table>
