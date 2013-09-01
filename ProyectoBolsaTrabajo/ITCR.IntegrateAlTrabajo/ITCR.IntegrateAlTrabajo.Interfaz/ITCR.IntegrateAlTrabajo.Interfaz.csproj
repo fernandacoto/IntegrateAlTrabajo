@@ -125,6 +125,7 @@
     </Compile>
     <Compile Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx.cs">
       <DependentUpon>frmConsultarServiciosOfrecidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx.designer.cs">
       <DependentUpon>frmConsultarServiciosOfrecidos.aspx</DependentUpon>
