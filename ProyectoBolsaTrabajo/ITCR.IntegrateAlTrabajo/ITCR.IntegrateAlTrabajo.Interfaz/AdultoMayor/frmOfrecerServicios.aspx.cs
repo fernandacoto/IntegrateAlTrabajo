@@ -21,7 +21,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "sat";
+                Session["Nombre_Usuario"] = "Satchiss";
                 mvOfrecerServicios.ActiveViewIndex = 0;
                 cargarTodosDropDownList();
             }
