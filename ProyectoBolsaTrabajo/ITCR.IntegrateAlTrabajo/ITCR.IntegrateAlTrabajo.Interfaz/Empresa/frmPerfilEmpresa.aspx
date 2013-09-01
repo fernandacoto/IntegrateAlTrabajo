@@ -257,7 +257,8 @@
                             <td class="style21">
                                 &nbsp;</td>
                             <td>
-                                <asp:Button ID="btnEditar" runat="server" Text="Editar Perfil" Width="101px" />
+                                <asp:Button ID="btnEditar" runat="server" Text="Editar Perfil" Width="101px" 
+                                    onclick="btnEditar_Click" />
                                 &nbsp;
                                 <asp:Button ID="btnEliminar" runat="server" onclick="btnEliminar_Click" 
                                     Text="Eliminar Cuenta" />

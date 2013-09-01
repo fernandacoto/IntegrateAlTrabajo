@@ -79,5 +79,10 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             Usuario.Estado = 3;
             Usuario.Actualizar();
         }
+
+        protected void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
