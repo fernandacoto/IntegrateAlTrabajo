@@ -19,10 +19,10 @@
         {
             width: 20px;
         }
-        .style8
-        {
-            height: 21px;
-        }
+    .style8
+    {
+        height: 21px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -73,7 +73,9 @@
                                             BackColor="WhiteSmoke" BorderStyle="Solid" CssClass="GridMantenimiento" 
                                             Font-Names="Verdana" Font-Size="Smaller" 
                         ForeColor="Black" Height="19px" 
-                                            Width="99%">
+                                            Width="99%" 
+                        ondeletecommand="dgServicios_DeleteCommand" 
+                        onitemcommand="dgServicios_ItemCommand">
                         <AlternatingItemStyle BackColor="Gainsboro" />
                         <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                                 Font-Size="Larger" ForeColor="White" 
@@ -89,11 +91,19 @@
                             <asp:BoundColumn DataField="FK_IdTipoServicio" HeaderText="Tipo">
                             </asp:BoundColumn>
                             <asp:BoundColumn HeaderText="Horario"></asp:BoundColumn>
-                            <asp:EditCommandColumn ButtonType="PushButton" CancelText="Cancel" 
-                                EditText="Editar" HeaderText="Editar" UpdateText="Update">
-                            </asp:EditCommandColumn>
-                            <asp:ButtonColumn ButtonType="PushButton" CommandName="Delete" 
-                                HeaderText="Eliminar" Text="Eliminar"></asp:ButtonColumn>
+                            <asp:TemplateColumn HeaderText="Editar">
+                                <ItemTemplate>
+                                    <asp:ImageButton ID="ibtnEditar" runat="server" CommandName="Editar" 
+                                        ImageUrl="~/Multimedia/editar.gif" />
+                                </ItemTemplate>
+                            </asp:TemplateColumn>
+                            <asp:TemplateColumn HeaderText="Eliminar">
+                                <ItemTemplate>
+                                    <asp:ImageButton ID="ibtnEliminar" runat="server" CommandName="Eliminar" 
+                                        Height="24px" ImageUrl="~/Multimedia/RTEmagicC_EliminarPag_10.png" 
+                                        Width="23px" />
+                                </ItemTemplate>
+                            </asp:TemplateColumn>
                         </Columns>
                     </asp:DataGrid>
                 </asp:Panel>

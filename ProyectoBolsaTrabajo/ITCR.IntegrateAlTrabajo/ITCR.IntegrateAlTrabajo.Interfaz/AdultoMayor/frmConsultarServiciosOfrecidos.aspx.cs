@@ -109,5 +109,32 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
             return Dias;
         }
+
+        protected void dgServicios_DeleteCommand(object source, DataGridCommandEventArgs e)
+        {
+
+            
+        }
+
+        protected void dgServicios_ItemCommand(object source, DataGridCommandEventArgs e)
+        {
+            if (e.CommandName == "Eliminar") {
+                cIATDiaServicioNegocios DiaEliminar = new cIATDiaServicioNegocios(1, "A", 2, "B");
+                DiaEliminar.FK_IdServicio = Int16.Parse(e.Item.Cells[0].Text.ToString());
+                DataTable TablaDias = DiaEliminar.Buscar();
+
+                for (int i = 0; i < TablaDias.Rows.Count; i++) {
+                    Int16 IdDia = Int16.Parse(TablaDias.Rows[i]["Id_DiaServicio"].ToString());
+                    DiaEliminar.Id_DiaServicio = IdDia;
+                    DiaEliminar.Eliminar();
+                }
+
+                cIATServicioNegocios ServicioEliminar = new cIATServicioNegocios(1, "A", 2, "B");
+                ServicioEliminar.Id_Servicio = Int16.Parse(e.Item.Cells[0].Text.ToString());
+                ServicioEliminar.Eliminar();
+
+                mostrarServicios();
+            }
+        }
     }
 }

@@ -63,7 +63,9 @@
     <Content Include="Empresa\frmPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmRegistroEmpresa.aspx" />
     <Content Include="Multimedia\banner_adultos_mayores.PNG" />
+    <Content Include="Multimedia\editar.gif" />
     <Content Include="Multimedia\Logo.PNG" />
+    <Content Include="Multimedia\RTEmagicC_EliminarPag_10.png" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
