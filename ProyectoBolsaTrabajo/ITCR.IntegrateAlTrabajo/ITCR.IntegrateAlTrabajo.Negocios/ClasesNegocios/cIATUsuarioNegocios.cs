@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de LOGICA DE NEGOCIOS para tabla 'IATUsuario'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: viernes 30 de agosto de 2013, 01:42:49 p.m.
+// Fecha: domingo 1 de septiembre de 2013, 10:05:02 a.m.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
 
@@ -54,6 +54,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -72,7 +73,8 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 					+"Nom_Usuario:"+Nom_Usuario.ToString()+";"
 					+"Contrasenna:"+Contrasenna.ToString()+";"
 					+"Indicio_Contrasenna:"+Indicio_Contrasenna.ToString()+";"
-					+"FK_IdTipoUsuario:"+FK_IdTipoUsuario.ToString()+";";
+					+"FK_IdTipoUsuario:"+FK_IdTipoUsuario.ToString()+";"
+					+"Estado:"+Estado.ToString()+";";
 				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Insertar();
 			}
@@ -98,6 +100,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -116,7 +119,8 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 					+"Nom_Usuario:"+Nom_Usuario.ToString()+";"
 					+"Contrasenna:"+Contrasenna.ToString()+";"
 					+"Indicio_Contrasenna:"+Indicio_Contrasenna.ToString()+";"
-					+"FK_IdTipoUsuario:"+FK_IdTipoUsuario.ToString()+";";
+					+"FK_IdTipoUsuario:"+FK_IdTipoUsuario.ToString()+";"
+					+"Estado:"+Estado.ToString()+";";
 				//wsseg.BitacoraRegistrarUso(_COD_APLICACIONBitacora, _COD_FUNCIONALIDADBitacora, _COD_SEDEBitacora, eTipoEventoBitacora.UsoFuncionalidad, _ID_USUARIOBitacora,operacion);
 				return base.Actualizar();
 			}
@@ -183,6 +187,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Llena todas las propiedades que corresponden al campo en tabla con el valor de la fila seleccionada.
 		/// </remarks>
@@ -234,6 +239,7 @@ namespace ITCR.IntegrateAlTrabajo.Negocios
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
