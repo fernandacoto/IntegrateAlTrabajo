@@ -7,25 +7,39 @@ using System.Web.UI.WebControls;
 using System.Data;
 using ITCR.IntegrateAlTrabajo.Negocios;
 using ITCR.IntegrateAlTrabajo.Datos;
+using System.Security.Cryptography;
+using System.Collections;
 
 namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 {
     public partial class frmRegistroAdultoMayor : System.Web.UI.Page
     {
-        cIATPersonaNegocios Persona = new cIATPersonaNegocios(1, "A", 2, "B");
-        cIATUsuarioNegocios Usuario = new cIATUsuarioNegocios(1, "A", 2, "B");
+        private static cIATPersonaNegocios Persona = new cIATPersonaNegocios(1, "A", 2, "B");
+        private static cIATUsuarioNegocios Usuario = new cIATUsuarioNegocios(1, "A", 2, "B");
         cIATEstudioNegocios Estudio = new cIATEstudioNegocios(1, "A", 2, "B");
         cIATExperienciaLaboralNegocios ExperienciaLaboral = new cIATExperienciaLaboralNegocios(1, "A", 2, "B");
         cIATIdiomaNegocios Idioma = new cIATIdiomaNegocios(1, "A", 2, "B");
-        cIATContactoNegocios TelefonoHabitacion = new cIATContactoNegocios(1, "A", 2, "B");
-        cIATContactoNegocios TelefonoCelular = new cIATContactoNegocios(1, "A", 2, "B");
-        cIATContactoNegocios CorreoElectronico = new cIATContactoNegocios(1, "A", 2, "B");
+        private static cIATContactoNegocios TelefonoHabitacion = new cIATContactoNegocios(1, "A", 2, "B");
+        private static cIATContactoNegocios TelefonoCelular = new cIATContactoNegocios(1, "A", 2, "B");
+        private static cIATContactoNegocios CorreoElectronico = new cIATContactoNegocios(1, "A", 2, "B");
+
+        cIATIdiomaXPersonaNegocios IdiomaXPersona = new cIATIdiomaXPersonaNegocios(1, "A", 2, "B");
+
+        DataTable TablaEstudios = new DataTable();
+        private static ArrayList ListaEstudios = new ArrayList();
+
+        DataTable TablaExperienciasLaborales = new DataTable();
+        private static ArrayList ListaExperienciasLaborales = new ArrayList();
+
+        private static ArrayList ListaIdiomas = new ArrayList();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+
                 mvRegistroAdultoMayor.ActiveViewIndex = 0;
+                btnFinalizar.Enabled = false;
                 cargarTodosDropDownList();
             }
         }
@@ -118,7 +132,16 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
         protected void btnSiguiente2_Click(object sender, EventArgs e)
         {
-            mvRegistroAdultoMayor.ActiveViewIndex = 2;
+            Validate("gvDatosAutenticacion");
+
+            if (Page.IsValid)
+            {
+                Usuario.Nom_Usuario = txtNombreUsuario.Text;
+                Usuario.Contrasenna = txtContraseña.Text;
+                Usuario.Indicio_Contrasenna = txtIndicioContraseña.Text;
+                Usuario.FK_IdTipoUsuario = 1;
+                mvRegistroAdultoMayor.ActiveViewIndex = 2;
+            }
         }
 
         protected void btnSiguiente3_Click(object sender, EventArgs e)
@@ -126,13 +149,25 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
             mvRegistroAdultoMayor.ActiveViewIndex = 3;
         }
 
+        //Experiencias laborales
         protected void btnSiguiente4_Click(object sender, EventArgs e)
         {
             mvRegistroAdultoMayor.ActiveViewIndex = 4;
         }
 
+        //Idiomas y pasatiempos
         protected void btnSiguiente5_Click(object sender, EventArgs e)
         {
+            for (int ContadorIdiomas = 0; ContadorIdiomas < chkIdiomas.Items.Count; ContadorIdiomas++)
+            {
+                if (chkIdiomas.Items[ContadorIdiomas].Selected)
+                {
+                    ListaIdiomas.Add(chkIdiomas.Items[ContadorIdiomas].Text);
+                }
+            }
+
+            Persona.Pasatiempos = txtPasatiempos.Text;
+
             mvRegistroAdultoMayor.ActiveViewIndex = 5;
         }
 
@@ -147,9 +182,174 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
             cargarDropDownListDistritos();
         }
 
-        protected void btnAgregarEstudio_Click(object sender, EventArgs e)
+
+        protected void btnCancelar1_Click(object sender, EventArgs e)
         {
 
+        }
+        protected void btnAgregarEstudio_Click(object sender, EventArgs e)
+        {
+            Validate("gvEstudios");
+
+            if (Page.IsValid)
+            {
+                TablaEstudios.Columns.Add("AnnoInicial", typeof(int));
+                TablaEstudios.Columns.Add("AnnoFinal", typeof(int));
+                TablaEstudios.Columns.Add("Institucion", typeof(string));
+                TablaEstudios.Columns.Add("Titulo", typeof(string));
+
+                Estudio.AnnoInicial = Int16.Parse(txtAñoInicialEstudio.Text);
+                Estudio.AnnoFinal = Int16.Parse(txtAñoFinalEstudio.Text);
+                Estudio.Institucion = txtInstitucionEstudio.Text;
+                Estudio.Titulo = txtTituloEstudio.Text;
+                ListaEstudios.Add(Estudio);
+
+                foreach (cIATEstudioNegocios ItemEstudio in ListaEstudios)
+                {
+                    DataRow FilaEstudio = TablaEstudios.NewRow();
+                    FilaEstudio["AnnoInicial"] = ItemEstudio.AnnoInicial.ToString();
+                    FilaEstudio["AnnoFinal"] = ItemEstudio.AnnoFinal.ToString();
+                    FilaEstudio["Institucion"] = ItemEstudio.Institucion.ToString();
+                    FilaEstudio["Titulo"] = ItemEstudio.Titulo.ToString();
+
+                    TablaEstudios.Rows.Add(FilaEstudio);
+                }
+
+                dgEstudios.DataSource = TablaEstudios;
+                dgEstudios.DataBind();
+
+                txtAñoInicialEstudio.Text = "";
+                txtAñoFinalEstudio.Text = "";
+                txtInstitucionEstudio.Text = "";
+                txtTituloEstudio.Text = "";
+                txtAñoInicialEstudio.Focus();
+            }
+        }
+
+        protected void btnAgregarExperienciaLaboral_Click(object sender, EventArgs e)
+        {
+            Validate("gvExperienciasLaborales");
+
+            if (Page.IsValid)
+            {
+                TablaExperienciasLaborales.Columns.Add("AnnoInicial", typeof(int));
+                TablaExperienciasLaborales.Columns.Add("AnnoFinal", typeof(int));
+                TablaExperienciasLaborales.Columns.Add("Empresa", typeof(string));
+                TablaExperienciasLaborales.Columns.Add("Puesto", typeof(string));
+
+                ExperienciaLaboral.AnnoInicial = Int16.Parse(txtAñoInicialExperienciaLaboral.Text);
+                ExperienciaLaboral.AnnoFinal = Int16.Parse(txtAñoFinalExperienciaLaboral.Text);
+                ExperienciaLaboral.Empresa = txtEmpresa.Text;
+                ExperienciaLaboral.Puesto = txtPuesto.Text;
+                ListaExperienciasLaborales.Add(ExperienciaLaboral);
+
+                foreach (cIATExperienciaLaboralNegocios ItemExperienciaLaboral in ListaExperienciasLaborales)
+                {
+                    DataRow FilaExperienciaLaboral = TablaExperienciasLaborales.NewRow();
+                    FilaExperienciaLaboral["AnnoInicial"] = ItemExperienciaLaboral.AnnoInicial.ToString();
+                    FilaExperienciaLaboral["AnnoFinal"] = ItemExperienciaLaboral.AnnoFinal.ToString();
+                    FilaExperienciaLaboral["Empresa"] = ItemExperienciaLaboral.Empresa.ToString();
+                    FilaExperienciaLaboral["Puesto"] = ItemExperienciaLaboral.Puesto.ToString();
+
+                    TablaExperienciasLaborales.Rows.Add(FilaExperienciaLaboral);
+                }
+
+                dgExperienciasLaborales.DataSource = TablaExperienciasLaborales;
+                dgExperienciasLaborales.DataBind();
+
+                txtAñoInicialExperienciaLaboral.Text = "";
+                txtAñoFinalExperienciaLaboral.Text = "";
+                txtEmpresa.Text = "";
+                txtPuesto.Text = "";
+                txtAñoInicialExperienciaLaboral.Focus();
+            }
+        }
+
+        protected void chkAceptarTerminos_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAceptarTerminos.Checked)
+            {
+                btnFinalizar.Enabled = true;
+            }
+            else
+            {
+                btnFinalizar.Enabled = false;
+            }
+        }
+
+        protected void btnFinalizar_Click(object sender, EventArgs e)
+        {
+            Usuario.Insertar();
+            DataTable TablaUsuario = Usuario.Buscar();
+
+            Int16 IdUsuario = 0;
+
+            if (TablaUsuario.Rows.Count > 0)
+            {
+                IdUsuario = Int16.Parse(TablaUsuario.Rows[0]["Id_Usuario"].ToString());
+            }
+
+            Persona.FK_IdUsuario = IdUsuario;
+
+            Persona.Insertar();
+
+            DataTable TablaPersona = Persona.Buscar();
+
+            Int16 IdPersona = 0;
+
+            if (TablaPersona.Rows.Count > 0)
+            {
+                IdPersona = Int16.Parse(TablaPersona.Rows[0]["Id_Persona"].ToString());
+            }
+
+            foreach (cIATEstudioNegocios ItemEstudio in ListaEstudios)
+            {
+                Estudio.AnnoInicial = Int16.Parse(ItemEstudio.AnnoInicial.ToString());
+                Estudio.AnnoFinal = Int16.Parse(ItemEstudio.AnnoFinal.ToString());
+                Estudio.Institucion = ItemEstudio.Institucion.ToString();
+                Estudio.Titulo = ItemEstudio.Titulo.ToString();
+                Estudio.FK_IdPersona = IdPersona;
+                Estudio.Insertar();
+            }
+
+            foreach (cIATExperienciaLaboralNegocios ItemExperienciaLaboral in ListaExperienciasLaborales)
+            {
+                ExperienciaLaboral.AnnoInicial = Int16.Parse(ItemExperienciaLaboral.AnnoInicial.ToString());
+                ExperienciaLaboral.AnnoFinal = Int16.Parse(ItemExperienciaLaboral.AnnoFinal.ToString());
+                ExperienciaLaboral.Empresa = ItemExperienciaLaboral.Empresa.ToString();
+                ExperienciaLaboral.Puesto = ItemExperienciaLaboral.Puesto.ToString();
+                ExperienciaLaboral.FK_IdPersona = IdPersona;
+                ExperienciaLaboral.Insertar();
+            }
+
+            foreach (String NombreIdioma in ListaIdiomas)
+            {
+                Idioma.Nom_Idioma = NombreIdioma;
+                DataTable TablaIdioma = Idioma.Buscar();
+
+                Int16 IdIdioma = 0;
+
+                if (TablaIdioma.Rows.Count > 0)
+                {
+                    IdIdioma = Int16.Parse(TablaIdioma.Rows[0]["Id_Idioma"].ToString());
+                }
+
+                IdiomaXPersona.FK_IdPersona = IdPersona;
+                IdiomaXPersona.FK_IdIdioma = IdIdioma;
+                IdiomaXPersona.Insertar();
+            }
+
+            TelefonoHabitacion.FK_IdTipoContacto = 1;
+            TelefonoHabitacion.FK_IdUsuario = IdUsuario;
+            TelefonoHabitacion.Insertar();
+
+            TelefonoCelular.FK_IdTipoContacto = 2;
+            TelefonoCelular.FK_IdUsuario = IdUsuario;
+            TelefonoCelular.Insertar();
+
+            CorreoElectronico.FK_IdTipoContacto = 3;
+            CorreoElectronico.FK_IdUsuario = IdUsuario;
+            CorreoElectronico.Insertar();
         }
     }
 }

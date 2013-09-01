@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de LOGICA DE NEGOCIOS para tabla 'IATUsuario'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: martes 27 de agosto de 2013, 09:45:40 p.m.
+// Fecha: sábado, 31 de agosto de 2013, 07:56:05 p.m.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
 
