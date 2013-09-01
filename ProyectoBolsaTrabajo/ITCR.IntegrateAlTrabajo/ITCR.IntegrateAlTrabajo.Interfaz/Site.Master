@@ -26,12 +26,12 @@
                 <table class="style1">
                     <tr>
                         <td class="style2">
-                            <asp:Image ID="imgLogo" runat="server" Height="153px" ImageAlign="Left" 
-                                ImageUrl="~/Multimedia/Logo.png" Width="127px" />
+                            <asp:Image ID="imgLogo" runat="server" Height="137px" ImageAlign="Left" 
+                                ImageUrl="~/Multimedia/Logo.PNG" Width="122px" />
                         </td>
                         <td>
-                            <asp:Image ID="imgBannerPrincipal" runat="server" ImageAlign="AbsMiddle" 
-                                ImageUrl="~/Multimedia/banner_adultos_mayores.jpg" Width="733px" />
+                            <asp:Image ID="imgBanner" runat="server" Height="147px" ImageAlign="AbsMiddle" 
+                                ImageUrl="~/Multimedia/banner_adultos_mayores.PNG" />
                         </td>
                     </tr>
                     </table>
