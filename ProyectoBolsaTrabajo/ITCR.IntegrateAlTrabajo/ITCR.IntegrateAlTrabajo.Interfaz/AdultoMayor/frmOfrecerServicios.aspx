@@ -78,30 +78,7 @@
         }
         .style30
         {
-            height: 19px;
-        }
-        .style31
-        {
-            height: 19px;
-        }
-        .style32
-        {
-            height: 19px;
-            width: 20px;
-        }
-        .style33
-        {
-            height: 19px;
-            width: 250px;
-        }
-        .style34
-        {
-            height: 1061px;
-            width: 15px;
-        }
-        .style35
-        {
-            height: 1061px;
+            height: 51px;
         }
         </style>
 </asp:Content>
@@ -141,13 +118,14 @@
         </tr>
         <tr>
             <td class="style30" colspan="7">
-                <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+                <asp:ValidationSummary ID="vsOfrecerServicios" runat="server" 
+                    ForeColor="#CC0000" ValidationGroup="gvServicios" />
             </td>
         </tr>
         <tr>
-            <td class="style34">
+            <td class="style5">
                 &nbsp;</td>
-            <td class="style35" colspan="5">
+            <td class="style6" colspan="5">
                 <asp:MultiView ID="mvOfrecerServicios" runat="server">
                     <asp:View ID="vPaso1" runat="server">
                         <table class="style14">
@@ -194,10 +172,14 @@
                                         <table class="style14">
                                             <tr>
                                                 <td class="style26">
-                                                    <asp:Label ID="lblDescripcion" runat="server" Text="Descripción"></asp:Label>
+                                                    <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:TextBox ID="txtDescripcionServicios" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="txtNombreServicios" runat="server"></asp:TextBox>
+                                                    <asp:RequiredFieldValidator ID="rfvNombreServicio" runat="server" 
+                                                        ControlToValidate="txtNombreServicios" 
+                                                        ErrorMessage="El nombre del servicio es un dato requerido." 
+                                                        ForeColor="Red" ValidationGroup="gvServicios">*</asp:RequiredFieldValidator>
                                                 </td>
                                                 <td class="style28">
                                                 </td>
@@ -222,16 +204,19 @@
                                                 <td class="style28">
                                                     &nbsp;</td>
                                                 <td class="style29">
-                                                    &nbsp;</td>
+                                                    <asp:Label ID="lblDescripcion" runat="server" Text="Descripción"></asp:Label>
+                                                </td>
                                                 <td class="style11">
-                                                    &nbsp;</td>
+                                                    <asp:TextBox ID="txtDescripcionServicios" runat="server"></asp:TextBox>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td class="style26">
                                                     <asp:Label ID="lblDias" runat="server" Text="Días"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:CheckBox ID="chkLunes" runat="server" Text="Lunes" />
+                                                    <asp:CheckBox ID="chkLunes" runat="server" Text="Lunes" 
+                                                        oncheckedchanged="chkLunes_CheckedChanged" AutoPostBack="True" />
                                                 </td>
                                                 <td class="style28">
                                                     &nbsp;</td>
@@ -239,7 +224,8 @@
                                                     <asp:Label ID="lblHoras" runat="server" Text="Horas"></asp:Label>
                                                 </td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora1" runat="server" Height="16px" Width="121px">
+                                                    <asp:DropDownList ID="drpHora1" runat="server" Height="16px" Width="121px" 
+                                                        Enabled="False" onselectedindexchanged="drpHora1_SelectedIndexChanged">
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -247,14 +233,16 @@
                                                 <td class="style26">
                                                     &nbsp;</td>
                                                 <td class="style27">
-                                                    <asp:CheckBox ID="chkMartes" runat="server" Text="Martes" />
+                                                    <asp:CheckBox ID="chkMartes" runat="server" Text="Martes" 
+                                                        oncheckedchanged="chkMartes_CheckedChanged" AutoPostBack="True" />
                                                 </td>
                                                 <td class="style28">
                                                     &nbsp;</td>
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora2" runat="server" Height="16px" Width="121px">
+                                                    <asp:DropDownList ID="drpHora2" runat="server" Height="16px" Width="121px" 
+                                                        Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -262,14 +250,16 @@
                                                 <td class="style26">
                                                     &nbsp;</td>
                                                 <td class="style27">
-                                                    <asp:CheckBox ID="chkMiercoles" runat="server" Text="Miércoles" />
+                                                    <asp:CheckBox ID="chkMiercoles" runat="server" Text="Miércoles" 
+                                                        oncheckedchanged="chkMiercoles_CheckedChanged" AutoPostBack="True" />
                                                 </td>
                                                 <td class="style28">
                                                     &nbsp;</td>
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora3" runat="server" Height="16px" Width="121px">
+                                                    <asp:DropDownList ID="drpHora3" runat="server" Height="16px" Width="121px" 
+                                                        Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -277,14 +267,16 @@
                                                 <td class="style26">
                                                     &nbsp;</td>
                                                 <td class="style27">
-                                                    <asp:CheckBox ID="chkJueves" runat="server" Text="Jueves" />
+                                                    <asp:CheckBox ID="chkJueves" runat="server" Text="Jueves" 
+                                                        oncheckedchanged="chkJueves_CheckedChanged" AutoPostBack="True" />
                                                 </td>
                                                 <td class="style28">
                                                     &nbsp;</td>
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora4" runat="server" Height="16px" Width="121px">
+                                                    <asp:DropDownList ID="drpHora4" runat="server" Height="16px" Width="121px" 
+                                                        Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -292,14 +284,16 @@
                                                 <td class="style26">
                                                     &nbsp;</td>
                                                 <td class="style27">
-                                                    <asp:CheckBox ID="chkViernes" runat="server" Text="Viernes" />
+                                                    <asp:CheckBox ID="chkViernes" runat="server" Text="Viernes" 
+                                                        oncheckedchanged="chkViernes_CheckedChanged" AutoPostBack="True" />
                                                 </td>
                                                 <td class="style28">
                                                     &nbsp;</td>
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora5" runat="server" Height="16px" Width="121px">
+                                                    <asp:DropDownList ID="drpHora5" runat="server" Height="16px" Width="121px" 
+                                                        Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -307,14 +301,16 @@
                                                 <td class="style26">
                                                     &nbsp;</td>
                                                 <td class="style27">
-                                                    <asp:CheckBox ID="chkSabado" runat="server" Text="Sábado" />
+                                                    <asp:CheckBox ID="chkSabado" runat="server" Text="Sábado" 
+                                                        oncheckedchanged="chkSabado_CheckedChanged" AutoPostBack="True" />
                                                 </td>
                                                 <td class="style28">
                                                     &nbsp;</td>
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora6" runat="server" Height="16px" Width="121px">
+                                                    <asp:DropDownList ID="drpHora6" runat="server" Height="16px" Width="121px" 
+                                                        Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -328,7 +324,8 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:Button ID="btnAgregarServicio" runat="server" Text="Agregar" />
+                                                    <asp:Button ID="btnAgregarServicio" runat="server" Text="Agregar" 
+                                                        onclick="btnAgregarServicio_Click" />
                                                 </td>
                                             </tr>
                                         </table>
@@ -359,9 +356,13 @@
                                             <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                                 Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                             <Columns>
-                                                <asp:BoundColumn HeaderText="Descripción"></asp:BoundColumn>
-                                                <asp:BoundColumn HeaderText="Categoría"></asp:BoundColumn>
-                                                <asp:BoundColumn HeaderText="Tipo"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Id" DataField="Id_Servicio" Visible="False"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Nombre" DataField="Nom_Servicio"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Descripción" DataField="Descripcion"></asp:BoundColumn>
+                                                <asp:BoundColumn DataField="FK_IdCategoriaServicio" HeaderText="Categoría">
+                                                </asp:BoundColumn>
+                                                <asp:BoundColumn DataField="FK_IdTipoServicio" HeaderText="Tipo">
+                                                </asp:BoundColumn>
                                                 <asp:BoundColumn HeaderText="Horario"></asp:BoundColumn>
                                             </Columns>
                                         </asp:DataGrid>
@@ -382,134 +383,13 @@
                                     <asp:Button ID="btnCancelar1" runat="server" Text="Cancelar" 
                                         onclick="btnCancelar3_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnSiguiente1" runat="server" onclick="btnSiguiente3_Click" 
-                                        Text="Siguiente" />
-                                </td>
-                            </tr>
-                        </table>
-                    </asp:View>
-                    <asp:View ID="vPaso2" runat="server">
-                        <table class="style14">
-                            <tr>
-                                <td class="style24">
-                                    <asp:Label ID="lblPaso2" runat="server" Text="Paso 2 de 2"></asp:Label>
-                                </td>
-                                <td class="style25">
-                                    &nbsp;</td>
-                                <td class="style17">
-                                </td>
-                                <td class="style20">
-                                </td>
-                                <td class="style11">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="style24" colspan="2">
-                                    <asp:Label ID="lblTerminosCondicionesUso" runat="server" 
-                                        Text="Términos y condiciones de uso"></asp:Label>
-                                </td>
-                                <td class="style17">
-                                    &nbsp;</td>
-                                <td class="style20">
-                                    &nbsp;</td>
-                                <td class="style11">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="style24" colspan="5">
-                                    <asp:Panel ID="PanelTerminosCondiciones" runat="server" BorderStyle="Solid" 
-                                        BorderWidth="2px" Height="200px">
-                                        <table class="style14">
-                                            <tr>
-                                                <td>
-                                                    <asp:Label ID="lblTextoTerminosCondiciones" runat="server" 
-                                                        Text="Texto de términos y condiciones"></asp:Label>
-                                                    <br />
-                                                    <br />
-                                                    <br />
-                                                    <br />
-                                                    <br />
-                                                    <br />
-                                                    <br />
-                                                    <br />
-                                                    <br />
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <asp:CheckBox ID="chkAceptarTerminos" runat="server" 
-                                                        Text="Acepto los términos y condiciones anteriores" />
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </asp:Panel>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="style24">
-                                    &nbsp;</td>
-                                <td class="style25">
-                                    &nbsp;</td>
-                                <td class="style17">
-                                    &nbsp;</td>
-                                <td class="style20">
-                                    &nbsp;</td>
-                                <td class="style11">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="style24">
-                                    &nbsp;</td>
-                                <td class="style25">
-                                    &nbsp;</td>
-                                <td class="style17">
-                                    &nbsp;</td>
-                                <td class="style20">
-                                    &nbsp;</td>
-                                <td class="style11">
-                                    <asp:Button ID="btnCancelar2" runat="server" Text="Cancelar" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnFinalizar" runat="server" onclick="btnSiguiente2_Click" 
-                                        Text="Finalizar" />
-                                </td>
+                                    </td>
                             </tr>
                         </table>
                     </asp:View>
                     <br />
                 </asp:MultiView>
             </td>
-            <td class="style34">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style5">
-                &nbsp;</td>
-            <td class="style6">
-                &nbsp;</td>
-            <td class="style7">
-                &nbsp;</td>
-            <td class="style8">
-                &nbsp;</td>
-            <td class="style6">
-                &nbsp;</td>
-            <td class="style7">
-                &nbsp;</td>
-            <td class="style4">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style5">
-                &nbsp;</td>
-            <td class="style6">
-                &nbsp;</td>
-            <td class="style7">
-                &nbsp;</td>
-            <td class="style8">
-                &nbsp;</td>
-            <td class="style6">
-                &nbsp;</td>
-            <td class="style7">
-                &nbsp;</td>
             <td class="style4">
                 &nbsp;</td>
         </tr>
