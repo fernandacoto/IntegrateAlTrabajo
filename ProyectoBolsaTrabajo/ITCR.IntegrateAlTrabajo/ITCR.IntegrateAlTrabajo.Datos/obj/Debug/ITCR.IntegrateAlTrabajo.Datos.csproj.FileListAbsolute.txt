@@ -10,3 +10,7 @@ D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.
 D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
 D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
 D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb

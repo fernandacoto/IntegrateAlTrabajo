@@ -22,13 +22,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblAgregarServicio;
         
         /// <summary>
-        /// ValidationSummary1 control.
+        /// vsOfrecerServicios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+        protected global::System.Web.UI.WebControls.ValidationSummary vsOfrecerServicios;
         
         /// <summary>
         /// mvOfrecerServicios control.
@@ -76,22 +76,31 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Panel PanelIngresoDatos;
         
         /// <summary>
-        /// lblDescripcion control.
+        /// lblNombre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescripcion;
+        protected global::System.Web.UI.WebControls.Label lblNombre;
         
         /// <summary>
-        /// txtDescripcionServicios control.
+        /// txtNombreServicios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescripcionServicios;
+        protected global::System.Web.UI.WebControls.TextBox txtNombreServicios;
+        
+        /// <summary>
+        /// rfvNombreServicio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombreServicio;
         
         /// <summary>
         /// lblCategoria control.
@@ -128,6 +137,24 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList drpTipoServicio;
+        
+        /// <summary>
+        /// lblDescripcion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDescripcion;
+        
+        /// <summary>
+        /// txtDescripcionServicios control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDescripcionServicios;
         
         /// <summary>
         /// lblDias control.
@@ -290,86 +317,5 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCancelar1;
-        
-        /// <summary>
-        /// btnSiguiente1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSiguiente1;
-        
-        /// <summary>
-        /// vPaso2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.View vPaso2;
-        
-        /// <summary>
-        /// lblPaso2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPaso2;
-        
-        /// <summary>
-        /// lblTerminosCondicionesUso control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTerminosCondicionesUso;
-        
-        /// <summary>
-        /// PanelTerminosCondiciones control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelTerminosCondiciones;
-        
-        /// <summary>
-        /// lblTextoTerminosCondiciones control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTextoTerminosCondiciones;
-        
-        /// <summary>
-        /// chkAceptarTerminos control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkAceptarTerminos;
-        
-        /// <summary>
-        /// btnCancelar2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelar2;
-        
-        /// <summary>
-        /// btnFinalizar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFinalizar;
     }
 }
