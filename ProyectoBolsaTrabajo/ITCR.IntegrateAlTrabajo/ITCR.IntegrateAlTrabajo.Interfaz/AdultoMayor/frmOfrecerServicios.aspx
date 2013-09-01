@@ -131,8 +131,7 @@
                         <table class="style14">
                             <tr>
                                 <td class="style24">
-                                    <asp:Label ID="lblPaso1" runat="server" Text="Paso 1 de 2"></asp:Label>
-                                </td>
+                                    Paso 1 de 1</td>
                                 <td class="style25">
                                     &nbsp;</td>
                                 <td class="style17">
@@ -379,10 +378,7 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar1" runat="server" Text="Cancelar" 
-                                        onclick="btnCancelar3_Click" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
                                     </td>
                             </tr>
                         </table>
