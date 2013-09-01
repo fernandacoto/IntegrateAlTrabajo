@@ -1,10 +1,10 @@
-#region Acerca de...
+﻿#region Acerca de...
 ///////////////////////////////////////////////////////////////////////////
 // Empresa:  Tecnológico de Costa Rica
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de acceso a datos para tabla 'IATEmpresa'
-// Generado por ITCR Gen v2010.0.0.0 
-// Fecha: sábado, 31 de agosto de 2013, 10:35:51 p.m.
+// Generado por ITCR Gen v2010.0.0.0
+// Fecha: domingo 1 de septiembre de 2013, 10:05:02 a.m.
 // Dado que esta clase implementa IDispose, las clases derivadas no deben hacerlo.
 ///////////////////////////////////////////////////////////////////////////
 #endregion

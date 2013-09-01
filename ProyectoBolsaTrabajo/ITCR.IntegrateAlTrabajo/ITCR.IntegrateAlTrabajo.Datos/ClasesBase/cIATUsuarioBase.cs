@@ -1,10 +1,10 @@
-#region Acerca de...
+﻿#region Acerca de...
 ///////////////////////////////////////////////////////////////////////////
 // Empresa:  Tecnológico de Costa Rica
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de acceso a datos para tabla 'IATUsuario'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: sábado, 31 de agosto de 2013, 07:56:05 p.m.
+// Fecha: domingo 1 de septiembre de 2013, 10:05:02 a.m.
 // Dado que esta clase implementa IDispose, las clases derivadas no deben hacerlo.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
@@ -25,7 +25,8 @@ namespace ITCR.IntegrateAlTrabajo.Base
 	{
 		#region Declaraciones de miembros de la clase
 			private SqlInt32		_fK_IdTipoUsuario, _fK_IdTipoUsuarioOld, _id_Usuario;
-			private SqlString		_contrasenna, _indicio_Contrasenna, _nom_Usuario;
+			private SqlByte			_estado;
+			private SqlString		_contrasenna, _nom_Usuario, _indicio_Contrasenna;
 		#endregion
 
 
@@ -49,6 +50,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -71,6 +73,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sContrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sIndicio_Contrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _indicio_Contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdTipoUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdTipoUsuario));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@byEstado", SqlDbType.TinyInt, 1, ParameterDirection.Input, false, 3, 0, "", DataRowVersion.Proposed, _estado));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_Usuario", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _id_Usuario));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iCodError", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
 
@@ -129,6 +132,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -151,6 +155,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sContrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sIndicio_Contrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _indicio_Contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdTipoUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdTipoUsuario));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@byEstado", SqlDbType.TinyInt, 1, ParameterDirection.Input, false, 3, 0, "", DataRowVersion.Proposed, _estado));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iCodError", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
 
 				if(_conexionBDEsCreadaLocal)
@@ -427,6 +432,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Llena todas las propiedades que corresponden al campo en tabla con el valor de la fila seleccionada.
 		/// </remarks>
@@ -476,6 +482,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 					_contrasenna = (string)toReturn.Rows[0]["Contrasenna"];
 					_indicio_Contrasenna = (string)toReturn.Rows[0]["Indicio_Contrasenna"];
 					_fK_IdTipoUsuario = (Int32)toReturn.Rows[0]["FK_IdTipoUsuario"];
+					_estado = (byte)toReturn.Rows[0]["Estado"];
 				}
 				return toReturn;
 			}
@@ -650,6 +657,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -674,6 +682,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sContrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sIndicio_Contrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _indicio_Contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdTipoUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdTipoUsuario));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@byEstado", SqlDbType.TinyInt, 1, ParameterDirection.Input, false, 3, 0, "", DataRowVersion.Proposed, _estado));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iCodError", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
 
 				if(_conexionBDEsCreadaLocal)
@@ -822,6 +831,24 @@ namespace ITCR.IntegrateAlTrabajo.Base
 					throw new ArgumentOutOfRangeException("FK_IdTipoUsuarioOld", "FK_IdTipoUsuarioOld can't be NULL");
 				}
 				_fK_IdTipoUsuarioOld = value;
+			}
+		}
+
+
+		public SqlByte Estado
+		{
+			get
+			{
+				return _estado;
+			}
+			set
+			{
+				SqlByte estadoTmp = (SqlByte)value;
+				if(estadoTmp.IsNull)
+				{
+					throw new ArgumentOutOfRangeException("Estado", "Estado can't be NULL");
+				}
+				_estado = value;
 			}
 		}
 		#endregion
