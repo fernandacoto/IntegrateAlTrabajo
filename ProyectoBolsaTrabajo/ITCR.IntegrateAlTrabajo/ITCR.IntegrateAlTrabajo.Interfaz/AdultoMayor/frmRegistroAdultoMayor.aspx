@@ -390,7 +390,8 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    <asp:Button ID="btnCancelar1" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelar1" runat="server" Text="Cancelar" 
+                                        onclick="btnCancelar1_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente1" runat="server" onclick="btnSiguiente1_Click" 
                                         Text="Siguiente" />
@@ -610,7 +611,8 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:Button ID="btnAgregarEstudio" runat="server" Text="Agregar" />
+                                                    <asp:Button ID="btnAgregarEstudio" runat="server" Text="Agregar" 
+                                                        onclick="btnAgregarEstudio_Click" />
                                                 </td>
                                             </tr>
                                         </table>
@@ -641,10 +643,10 @@
                                             <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                                 Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                             <Columns>
-                                                <asp:BoundColumn HeaderText="Año inicial"></asp:BoundColumn>
-                                                <asp:BoundColumn HeaderText="Año final"></asp:BoundColumn>
-                                                <asp:BoundColumn HeaderText="Institución"></asp:BoundColumn>
-                                                <asp:BoundColumn HeaderText="Título"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Año inicial" DataField="AnnoInicial"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Año final" DataField="AnnoFinal"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Institución" DataField="Institucion"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Título" DataField="Titulo"></asp:BoundColumn>
                                             </Columns>
                                         </asp:DataGrid>
                                     </asp:Panel>
@@ -772,7 +774,8 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:Button ID="btnAgregarExperienciaLaboral" runat="server" Text="Agregar" />
+                                                    <asp:Button ID="btnAgregarExperienciaLaboral" runat="server" Text="Agregar" 
+                                                        onclick="btnAgregarExperienciaLaboral_Click" />
                                                 </td>
                                             </tr>
                                         </table>
@@ -803,11 +806,11 @@
                                             <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                                 Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                             <Columns>
-                                                <asp:BoundColumn HeaderText="Año inicial">
+                                                <asp:BoundColumn HeaderText="Año inicial" DataField="AnnoInicial">
                                                 </asp:BoundColumn>
-                                                <asp:BoundColumn HeaderText="Año final"></asp:BoundColumn>
-                                                <asp:BoundColumn HeaderText="Empresa"></asp:BoundColumn>
-                                                <asp:BoundColumn HeaderText="Puesto"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Año final" DataField="AnnoFinal"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Empresa" DataField="Empresa"></asp:BoundColumn>
+                                                <asp:BoundColumn HeaderText="Puesto" DataField="Puesto"></asp:BoundColumn>
                                             </Columns>
                                         </asp:DataGrid>
                                     </asp:Panel>
@@ -884,30 +887,15 @@
                                                     <asp:Label ID="lblIdiomas" runat="server" Text="Idiomas"></asp:Label>
                                                 </td>
                                                 <td class="style30">
-                                                    <asp:CheckBox ID="chkIngles" runat="server" Text="Inglés" />
+                                                    <asp:CheckBoxList ID="chkIdiomas" runat="server" CellPadding="0" 
+                                                        CellSpacing="0" Height="16px" RepeatDirection="Horizontal" Width="744px">
+                                                        <asp:ListItem>Inglés</asp:ListItem>
+                                                        <asp:ListItem>Francés</asp:ListItem>
+                                                        <asp:ListItem>Portugués</asp:ListItem>
+                                                        <asp:ListItem>Mandarín</asp:ListItem>
+                                                        <asp:ListItem>Otro</asp:ListItem>
+                                                    </asp:CheckBoxList>
                                                 </td>
-                                                <td class="style30">
-                                                    <asp:CheckBox ID="chkPortugues" runat="server" Text="Portugués" />
-                                                </td>
-                                                <td class="style30">
-                                                    <asp:CheckBox ID="chkOtro" runat="server" Text="Otro" />
-                                                </td>
-                                                <td class="style11">
-                                                    &nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style26">
-                                                    &nbsp;</td>
-                                                <td class="style30">
-                                                    <asp:CheckBox ID="chkFrances" runat="server" Text="Francés" />
-                                                </td>
-                                                <td class="style30">
-                                                    <asp:CheckBox ID="chkMandarin" runat="server" Text="Mandarín" />
-                                                </td>
-                                                <td class="style30">
-                                                    &nbsp;</td>
-                                                <td class="style11">
-                                                    &nbsp;</td>
                                             </tr>
                                         </table>
                                     </asp:Panel>
@@ -1015,7 +1003,8 @@
                                             <tr>
                                                 <td>
                                                     <asp:CheckBox ID="chkAceptarTerminos" runat="server" 
-                                                        Text="Acepto los términos y condiciones anteriores" />
+                                                        Text="Acepto los términos y condiciones anteriores" AutoPostBack="True" 
+                                                        oncheckedchanged="chkAceptarTerminos_CheckedChanged" />
                                                 </td>
                                             </tr>
                                         </table>
@@ -1046,7 +1035,7 @@
                                 <td class="style11">
                                     <asp:Button ID="btnCancelar6" runat="server" Text="Cancelar" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnFinalizar" runat="server" onclick="btnSiguiente2_Click" 
+                                    <asp:Button ID="btnFinalizar" runat="server" onclick="btnFinalizar_Click" 
                                         Text="Finalizar" />
                                 </td>
                             </tr>

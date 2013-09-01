@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de acceso a datos para tabla 'IATUsuario'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: martes 27 de agosto de 2013, 09:45:40 p.m.
+// Fecha: viernes 30 de agosto de 2013, 01:42:49 p.m.
 // Dado que esta clase implementa IDispose, las clases derivadas no deben hacerlo.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
@@ -24,9 +24,8 @@ namespace ITCR.IntegrateAlTrabajo.Base
 	public class cIATUsuarioBase : cBDInteraccionBase
 	{
 		#region Declaraciones de miembros de la clase
-			private SqlBinary		_contrasenna;
 			private SqlInt32		_fK_IdTipoUsuario, _fK_IdTipoUsuarioOld, _id_Usuario;
-			private SqlString		_nom_Usuario, _indicio_Contrasenna;
+			private SqlString		_contrasenna, _indicio_Contrasenna, _nom_Usuario;
 		#endregion
 
 
@@ -69,7 +68,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 			try
 			{
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sNom_Usuario", SqlDbType.VarChar, 30, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _nom_Usuario));
-				cmdAEjecutar.Parameters.Add(new SqlParameter("@biContrasenna", SqlDbType.Binary, 128, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@sContrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sIndicio_Contrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _indicio_Contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdTipoUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdTipoUsuario));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_Usuario", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _id_Usuario));
@@ -149,7 +148,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 			{
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_Usuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _id_Usuario));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sNom_Usuario", SqlDbType.VarChar, 30, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _nom_Usuario));
-				cmdAEjecutar.Parameters.Add(new SqlParameter("@biContrasenna", SqlDbType.Binary, 128, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@sContrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sIndicio_Contrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _indicio_Contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdTipoUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdTipoUsuario));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iCodError", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
@@ -474,7 +473,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				{
 					_id_Usuario = (Int32)toReturn.Rows[0]["Id_Usuario"];
 					_nom_Usuario = (string)toReturn.Rows[0]["Nom_Usuario"];
-					_contrasenna = (byte[])toReturn.Rows[0]["Contrasenna"];
+					_contrasenna = (string)toReturn.Rows[0]["Contrasenna"];
 					_indicio_Contrasenna = (string)toReturn.Rows[0]["Indicio_Contrasenna"];
 					_fK_IdTipoUsuario = (Int32)toReturn.Rows[0]["FK_IdTipoUsuario"];
 				}
@@ -672,7 +671,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 			{
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_Usuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _id_Usuario));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sNom_Usuario", SqlDbType.VarChar, 30, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _nom_Usuario));
-				cmdAEjecutar.Parameters.Add(new SqlParameter("@biContrasenna", SqlDbType.Binary, 128, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
+				cmdAEjecutar.Parameters.Add(new SqlParameter("@sContrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@sIndicio_Contrasenna", SqlDbType.VarChar, 50, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _indicio_Contrasenna));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iFK_IdTipoUsuario", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _fK_IdTipoUsuario));
 				cmdAEjecutar.Parameters.Add(new SqlParameter("@iCodError", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
@@ -757,7 +756,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 		}
 
 
-		public SqlBinary Contrasenna
+		public SqlString Contrasenna
 		{
 			get
 			{
@@ -765,7 +764,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 			}
 			set
 			{
-				SqlBinary contrasennaTmp = (SqlBinary)value;
+				SqlString contrasennaTmp = (SqlString)value;
 				if(contrasennaTmp.IsNull)
 				{
 					throw new ArgumentOutOfRangeException("Contrasenna", "Contrasenna can't be NULL");

@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de acceso a datos para tabla 'IATUsuario'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: martes 27 de agosto de 2013, 09:45:40 p.m.
+// Fecha: viernes 30 de agosto de 2013, 01:42:49 p.m.
 // Dado que esta clase implementa IDispose, las clases derivadas no deben hacerlo.
 ///////////////////////////////////////////////////////////////////////////
 #endregion

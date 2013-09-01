@@ -31,13 +31,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz {
         protected global::System.Web.UI.WebControls.Image imgLogo;
         
         /// <summary>
-        /// imgBannerPrincipal control.
+        /// imgBanner control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgBannerPrincipal;
+        protected global::System.Web.UI.WebControls.Image imgBanner;
         
         /// <summary>
         /// PanelBarraAzul1 control.

@@ -114,7 +114,9 @@
             <td class="style8">
                 &nbsp;</td>
             <td class="style9" colspan="5">
-                <asp:ValidationSummary ID="ValidationSummaryRegistroEmpresa" runat="server" />
+                <asp:ValidationSummary ID="vsRegistroEmpresaPaso3" runat="server" />
+                <asp:ValidationSummary ID="vsRegistroEmpresaPaso2" runat="server" />
+                <asp:ValidationSummary ID="vsRegistroEmpresaPaso1" runat="server" />
             </td>
             <td class="style8">
                 &nbsp;</td>

@@ -1057,49 +1057,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblIdiomas;
         
         /// <summary>
-        /// chkIngles control.
+        /// chkIdiomas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkIngles;
-        
-        /// <summary>
-        /// chkPortugues control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkPortugues;
-        
-        /// <summary>
-        /// chkOtro control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkOtro;
-        
-        /// <summary>
-        /// chkFrances control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkFrances;
-        
-        /// <summary>
-        /// chkMandarin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkMandarin;
+        protected global::System.Web.UI.WebControls.CheckBoxList chkIdiomas;
         
         /// <summary>
         /// PanelIdiomas0 control.
