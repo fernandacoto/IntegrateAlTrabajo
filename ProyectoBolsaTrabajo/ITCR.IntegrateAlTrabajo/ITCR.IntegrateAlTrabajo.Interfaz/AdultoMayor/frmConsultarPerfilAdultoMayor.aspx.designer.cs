@@ -10,70 +10,34 @@
 namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
     
     
-    public partial class frmOfrecerServicios {
+    public partial class frmConsultarPerfilAdultoMayor {
         
         /// <summary>
-        /// lblAgregarServicio control.
+        /// lblMiPerfil control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAgregarServicio;
+        protected global::System.Web.UI.WebControls.Label lblMiPerfil;
         
         /// <summary>
-        /// vsOfrecerServicios control.
+        /// PanelDatosPersonales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary vsOfrecerServicios;
+        protected global::System.Web.UI.WebControls.Panel PanelDatosPersonales;
         
         /// <summary>
-        /// mvOfrecerServicios control.
+        /// lblDatosPersonales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.MultiView mvOfrecerServicios;
-        
-        /// <summary>
-        /// vPaso1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.View vPaso1;
-        
-        /// <summary>
-        /// lblPaso1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPaso1;
-        
-        /// <summary>
-        /// lblServicios control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblServicios;
-        
-        /// <summary>
-        /// PanelIngresoDatos control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelIngresoDatos;
+        protected global::System.Web.UI.WebControls.Label lblDatosPersonales;
         
         /// <summary>
         /// lblNombre control.
@@ -85,237 +49,318 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblNombre;
         
         /// <summary>
-        /// txtNombreServicios control.
+        /// lblNombreDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombreServicios;
+        protected global::System.Web.UI.WebControls.Label lblNombreDato;
         
         /// <summary>
-        /// rfvNombreServicio control.
+        /// lblTelefonoCelular control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombreServicio;
+        protected global::System.Web.UI.WebControls.Label lblTelefonoCelular;
         
         /// <summary>
-        /// lblCategoria control.
+        /// lblTelefonoCelularDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCategoria;
+        protected global::System.Web.UI.WebControls.Label lblTelefonoCelularDato;
         
         /// <summary>
-        /// drpCategoriaServicio control.
+        /// lblApellido1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpCategoriaServicio;
+        protected global::System.Web.UI.WebControls.Label lblApellido1;
         
         /// <summary>
-        /// lblTipo control.
+        /// lblApellido1Dato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTipo;
+        protected global::System.Web.UI.WebControls.Label lblApellido1Dato;
         
         /// <summary>
-        /// drpTipoServicio control.
+        /// lblCorreoElectronico control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpTipoServicio;
+        protected global::System.Web.UI.WebControls.Label lblCorreoElectronico;
         
         /// <summary>
-        /// lblDescripcion control.
+        /// lblCorreoElectronicoDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescripcion;
+        protected global::System.Web.UI.WebControls.Label lblCorreoElectronicoDato;
         
         /// <summary>
-        /// txtDescripcionServicios control.
+        /// lblApellido2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescripcionServicios;
+        protected global::System.Web.UI.WebControls.Label lblApellido2;
         
         /// <summary>
-        /// lblDias control.
+        /// lblApellido2Dato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDias;
+        protected global::System.Web.UI.WebControls.Label lblApellido2Dato;
         
         /// <summary>
-        /// chkLunes control.
+        /// lblProvincia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkLunes;
+        protected global::System.Web.UI.WebControls.Label lblProvincia;
         
         /// <summary>
-        /// lblHoras control.
+        /// lblProvinciaDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHoras;
+        protected global::System.Web.UI.WebControls.Label lblProvinciaDato;
         
         /// <summary>
-        /// drpHora1 control.
+        /// lblSexo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora1;
+        protected global::System.Web.UI.WebControls.Label lblSexo;
         
         /// <summary>
-        /// chkMartes control.
+        /// lblSexoDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkMartes;
+        protected global::System.Web.UI.WebControls.Label lblSexoDato;
         
         /// <summary>
-        /// drpHora2 control.
+        /// lblCanton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora2;
+        protected global::System.Web.UI.WebControls.Label lblCanton;
         
         /// <summary>
-        /// chkMiercoles control.
+        /// lblCantonDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkMiercoles;
+        protected global::System.Web.UI.WebControls.Label lblCantonDato;
         
         /// <summary>
-        /// drpHora3 control.
+        /// lblCedula control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora3;
+        protected global::System.Web.UI.WebControls.Label lblCedula;
         
         /// <summary>
-        /// chkJueves control.
+        /// lblCedulaDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkJueves;
+        protected global::System.Web.UI.WebControls.Label lblCedulaDato;
         
         /// <summary>
-        /// drpHora4 control.
+        /// lblDistrito control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora4;
+        protected global::System.Web.UI.WebControls.Label lblDistrito;
         
         /// <summary>
-        /// chkViernes control.
+        /// lblDistritoDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkViernes;
+        protected global::System.Web.UI.WebControls.Label lblDistritoDato;
         
         /// <summary>
-        /// drpHora5 control.
+        /// lblFechaNacimiento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora5;
+        protected global::System.Web.UI.WebControls.Label lblFechaNacimiento;
         
         /// <summary>
-        /// chkSabado control.
+        /// lblFechaNacimientoDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkSabado;
+        protected global::System.Web.UI.WebControls.Label lblFechaNacimientoDato;
         
         /// <summary>
-        /// drpHora6 control.
+        /// lblTelefonoHabitacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora6;
+        protected global::System.Web.UI.WebControls.Label lblTelefonoHabitacion;
         
         /// <summary>
-        /// btnAgregarServicio control.
+        /// lblTelefonoHabitacionDato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregarServicio;
+        protected global::System.Web.UI.WebControls.Label lblTelefonoHabitacionDato;
         
         /// <summary>
-        /// PanelTablaDatosServicios control.
+        /// PanelEstudios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelTablaDatosServicios;
+        protected global::System.Web.UI.WebControls.Panel PanelEstudios;
         
         /// <summary>
-        /// dgServicios control.
+        /// lblEstudios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid dgServicios;
+        protected global::System.Web.UI.WebControls.Label lblEstudios;
         
         /// <summary>
-        /// btnCancelar1 control.
+        /// dgEstudios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelar1;
+        protected global::System.Web.UI.WebControls.DataGrid dgEstudios;
+        
+        /// <summary>
+        /// PanelExperienciasLaborales control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelExperienciasLaborales;
+        
+        /// <summary>
+        /// lblExperienciasLaborales control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblExperienciasLaborales;
+        
+        /// <summary>
+        /// dgExperienciasLaborales control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataGrid dgExperienciasLaborales;
+        
+        /// <summary>
+        /// PanelOtros control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelOtros;
+        
+        /// <summary>
+        /// lblOtros control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOtros;
+        
+        /// <summary>
+        /// lblIdiomas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIdiomas;
+        
+        /// <summary>
+        /// lblIdiomasDato control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIdiomasDato;
+        
+        /// <summary>
+        /// lblPasatiempos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPasatiempos;
+        
+        /// <summary>
+        /// lblPasatiemposDato control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPasatiemposDato;
     }
 }

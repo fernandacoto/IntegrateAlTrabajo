@@ -663,7 +663,8 @@
                                     &nbsp;</td>
                                 <td class="style11">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras1" runat="server" Text="Atrás" />
+                                    <asp:Button ID="btnAtras1" runat="server" Text="Atrás" 
+                                        onclick="btnAtras1_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnCancelar3" runat="server" Text="Cancelar" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;

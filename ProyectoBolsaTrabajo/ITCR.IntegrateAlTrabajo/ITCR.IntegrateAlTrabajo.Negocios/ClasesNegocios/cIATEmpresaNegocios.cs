@@ -1,10 +1,10 @@
-#region Acerca de...
+﻿#region Acerca de...
 ///////////////////////////////////////////////////////////////////////////
 // Cliente:  Tecnológico de Costa Rica
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de LOGICA DE NEGOCIOS para tabla 'IATEmpresa'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: sábado, 31 de agosto de 2013, 10:35:51 p.m.
+// Fecha: domingo 1 de septiembre de 2013, 10:05:02 a.m.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
 

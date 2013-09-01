@@ -4,7 +4,7 @@
 // Proyecto: Intégrate al trabajo
 // Descripción: Clase de acceso a datos para tabla 'IATUsuario'
 // Generado por ITCR Gen v2010.0.0.0 
-// Fecha: viernes 30 de agosto de 2013, 01:42:49 p.m.
+// Fecha: domingo 1 de septiembre de 2013, 10:05:02 a.m.
 // Dado que esta clase implementa IDispose, las clases derivadas no deben hacerlo.
 ///////////////////////////////////////////////////////////////////////////
 #endregion
@@ -45,6 +45,7 @@ namespace ITCR.IntegrateAlTrabajo.Datos
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -70,6 +71,7 @@ namespace ITCR.IntegrateAlTrabajo.Datos
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>
@@ -119,6 +121,7 @@ namespace ITCR.IntegrateAlTrabajo.Datos
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Llena todas las propiedades que corresponden al campo en tabla con el valor de la fila seleccionada.
 		/// </remarks>
@@ -156,6 +159,7 @@ namespace ITCR.IntegrateAlTrabajo.Datos
 		///		 <LI>Contrasenna</LI>
 		///		 <LI>Indicio_Contrasenna</LI>
 		///		 <LI>FK_IdTipoUsuario</LI>
+		///		 <LI>Estado</LI>
 		/// </UL>
 		/// Propiedades actualizadas luego de una llamada exitosa a este método: 
 		/// <UL>

@@ -182,6 +182,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
             cargarDropDownListDistritos();
         }
 
+
         protected void btnCancelar1_Click(object sender, EventArgs e)
         {
 
