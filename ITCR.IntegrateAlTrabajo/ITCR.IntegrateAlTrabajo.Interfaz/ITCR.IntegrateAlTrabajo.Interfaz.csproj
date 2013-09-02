@@ -56,19 +56,28 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx" />
+<<<<<<< HEAD:ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Interfaz/ITCR.IntegrateAlTrabajo.Interfaz.csproj
     <Content Include="AdultoMayor\frmEditarDatosPersonalesAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmEditarEstudiosAdultoMayor.aspx" />
+=======
+    <Content Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx" />
+>>>>>>> e590cbf1ff563b6feb4f65397d0d2115aff3516b:ProyectoBolsaTrabajo/ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Interfaz/ITCR.IntegrateAlTrabajo.Interfaz.csproj
     <Content Include="AdultoMayor\frmOfrecerServicios.aspx" />
     <Content Include="AdultoMayor\frmRegistroAdultoMayor.aspx" />
     <Content Include="Empresa\frmEditarPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmRegistroEmpresa.aspx" />
     <Content Include="Multimedia\banner_adultos_mayores.PNG" />
+<<<<<<< HEAD:ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Interfaz/ITCR.IntegrateAlTrabajo.Interfaz.csproj
     <Content Include="Multimedia\banner_autenticacion.jpg" />
     <Content Include="Multimedia\icono-buscar.jpg" />
     <Content Include="Multimedia\icono-editar.jpg" />
     <Content Include="Multimedia\icono-eliminar.jpg" />
+=======
+    <Content Include="Multimedia\editar.gif" />
+>>>>>>> e590cbf1ff563b6feb4f65397d0d2115aff3516b:ProyectoBolsaTrabajo/ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Interfaz/ITCR.IntegrateAlTrabajo.Interfaz.csproj
     <Content Include="Multimedia\Logo.PNG" />
+    <Content Include="Multimedia\RTEmagicC_EliminarPag_10.png" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -126,6 +135,7 @@
     <Compile Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx.designer.cs">
       <DependentUpon>frmConsultarPerfilAdultoMayor.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD:ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Interfaz/ITCR.IntegrateAlTrabajo.Interfaz.csproj
     <Compile Include="AdultoMayor\frmEditarDatosPersonalesAdultoMayor.aspx.cs">
       <DependentUpon>frmEditarDatosPersonalesAdultoMayor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -139,6 +149,14 @@
     </Compile>
     <Compile Include="AdultoMayor\frmEditarEstudiosAdultoMayor.aspx.designer.cs">
       <DependentUpon>frmEditarEstudiosAdultoMayor.aspx</DependentUpon>
+=======
+    <Compile Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx.cs">
+      <DependentUpon>frmConsultarServiciosOfrecidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx.designer.cs">
+      <DependentUpon>frmConsultarServiciosOfrecidos.aspx</DependentUpon>
+>>>>>>> e590cbf1ff563b6feb4f65397d0d2115aff3516b:ProyectoBolsaTrabajo/ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Interfaz/ITCR.IntegrateAlTrabajo.Interfaz.csproj
     </Compile>
     <Compile Include="AdultoMayor\frmOfrecerServicios.aspx.cs">
       <DependentUpon>frmOfrecerServicios.aspx</DependentUpon>
