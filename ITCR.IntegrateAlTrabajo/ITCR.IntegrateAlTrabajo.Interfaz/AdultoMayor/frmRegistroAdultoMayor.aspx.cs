@@ -139,6 +139,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
                 Usuario.Nom_Usuario = txtNombreUsuario.Text;
                 Usuario.Contrasenna = txtContraseña.Text;
                 Usuario.Indicio_Contrasenna = txtIndicioContraseña.Text;
+                Usuario.Estado = 2;
                 Usuario.FK_IdTipoUsuario = 1;
                 mvRegistroAdultoMayor.ActiveViewIndex = 2;
             }

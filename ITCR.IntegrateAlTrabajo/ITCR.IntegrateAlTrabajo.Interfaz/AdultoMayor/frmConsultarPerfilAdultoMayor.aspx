@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="frmConsultarPerfilAdultoMayor.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmConsultarPerfilAdultoMayor" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestraAdultoMayor.Master" AutoEventWireup="true" CodeBehind="frmConsultarPerfilAdultoMayor.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmConsultarPerfilAdultoMayor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
         .style3
@@ -59,11 +59,6 @@
             width: 29px;
             height: 25px;
         }
-        .style21
-        {
-            width: 81px;
-            height: 25px;
-        }
         .style25
         {
             width: 100px;
@@ -103,6 +98,25 @@
         {
             width: 117px;
             height: 25px;
+        }
+        .style34
+        {
+            height: 22px;
+            width: 408px;
+        }
+        .style35
+        {
+            width: 131px;
+            height: 22px;
+        }
+        .style36
+        {
+            width: 31px;
+            height: 22px;
+        }
+        .style37
+        {
+            height: 22px;
         }
     </style>
 </asp:Content>
@@ -155,6 +169,12 @@
                             <td class="style29">
                             </td>
                             <td class="style6">
+                                <asp:Panel ID="PanelEditarDatosPersonales" runat="server" 
+                                    HorizontalAlign="Right">
+                                    <asp:ImageButton ID="ibtnEditarDatosPersonales" runat="server" Height="50px" 
+                                        ImageUrl="~/Multimedia/icono-editar.jpg" 
+                                        onclick="ibtnEditarDatosPersonales_Click1" Width="50px" />
+                                </asp:Panel>
                             </td>
                         </tr>
                         <tr>
@@ -264,7 +284,7 @@
                             <td class="style29">
                                 &nbsp;</td>
                             <td class="style6">
-                                &nbsp;</td>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                         </tr>
                     </table>
                 </asp:Panel>
@@ -296,14 +316,19 @@
                     BorderWidth="2px" Height="120px" ScrollBars="Auto">
                     <table class="style9">
                         <tr>
-                            <td class="style14">
+                            <td class="style34">
                                 <asp:Label ID="lblEstudios" runat="server" Text="Estudios"></asp:Label>
                             </td>
-                            <td class="style16">
+                            <td class="style36">
                             </td>
-                            <td class="style17">
+                            <td class="style35">
                             </td>
-                            <td class="style6">
+                            <td class="style37">
+                                <asp:Panel ID="PanelEditarEstudios" runat="server" HorizontalAlign="Right">
+                                    <asp:ImageButton ID="ibtnEditarEstudios" runat="server" Height="50px" 
+                                        ImageUrl="~/Multimedia/icono-editar.jpg" 
+                                        onclick="ibtnEditarDatosPersonales_Click" Width="50px" />
+                                </asp:Panel>
                             </td>
                         </tr>
                         <tr>
@@ -367,6 +392,7 @@
                             <td class="style17">
                             </td>
                             <td class="style6">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </td>
                         </tr>
                         <tr>
@@ -427,6 +453,7 @@
                             <td class="style32">
                             </td>
                             <td class="style6">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </td>
                         </tr>
                         <tr>

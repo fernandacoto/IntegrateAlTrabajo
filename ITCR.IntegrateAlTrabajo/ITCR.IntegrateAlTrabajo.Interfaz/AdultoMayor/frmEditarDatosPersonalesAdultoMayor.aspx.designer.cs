@@ -10,34 +10,25 @@
 namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
     
     
-    public partial class frmConsultarPerfilAdultoMayor {
+    public partial class frmEditarDatosPersonalesAdultoMayor {
         
         /// <summary>
-        /// lblMiPerfil control.
+        /// lblActualizarDatosPersonales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMiPerfil;
+        protected global::System.Web.UI.WebControls.Label lblActualizarDatosPersonales;
         
         /// <summary>
-        /// PanelDatosPersonales control.
+        /// PanelDatos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelDatosPersonales;
-        
-        /// <summary>
-        /// lblDatosPersonales control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDatosPersonales;
+        protected global::System.Web.UI.WebControls.Panel PanelDatos;
         
         /// <summary>
         /// lblNombre control.
@@ -49,13 +40,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblNombre;
         
         /// <summary>
-        /// lblNombreDato control.
+        /// txtNombre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombreDato;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
         /// lblTelefonoCelular control.
@@ -67,13 +58,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblTelefonoCelular;
         
         /// <summary>
-        /// lblTelefonoCelularDato control.
+        /// txtTelefonoCelular control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTelefonoCelularDato;
+        protected global::System.Web.UI.WebControls.TextBox txtTelefonoCelular;
         
         /// <summary>
         /// lblApellido1 control.
@@ -85,13 +76,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblApellido1;
         
         /// <summary>
-        /// lblApellido1Dato control.
+        /// txtApellido1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblApellido1Dato;
+        protected global::System.Web.UI.WebControls.TextBox txtApellido1;
         
         /// <summary>
         /// lblCorreoElectronico control.
@@ -103,13 +94,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblCorreoElectronico;
         
         /// <summary>
-        /// lblCorreoElectronicoDato control.
+        /// txtCorreoElectronico control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCorreoElectronicoDato;
+        protected global::System.Web.UI.WebControls.TextBox txtCorreoElectronico;
         
         /// <summary>
         /// lblApellido2 control.
@@ -121,13 +112,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblApellido2;
         
         /// <summary>
-        /// lblApellido2Dato control.
+        /// txtApellido2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblApellido2Dato;
+        protected global::System.Web.UI.WebControls.TextBox txtApellido2;
         
         /// <summary>
         /// lblProvincia control.
@@ -139,13 +130,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblProvincia;
         
         /// <summary>
-        /// lblProvinciaDato control.
+        /// drpProvincia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProvinciaDato;
+        protected global::System.Web.UI.WebControls.DropDownList drpProvincia;
         
         /// <summary>
         /// lblSexo control.
@@ -157,13 +148,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblSexo;
         
         /// <summary>
-        /// lblSexoDato control.
+        /// drpSexo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSexoDato;
+        protected global::System.Web.UI.WebControls.DropDownList drpSexo;
         
         /// <summary>
         /// lblCanton control.
@@ -175,13 +166,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblCanton;
         
         /// <summary>
-        /// lblCantonDato control.
+        /// drpCanton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCantonDato;
+        protected global::System.Web.UI.WebControls.DropDownList drpCanton;
         
         /// <summary>
         /// lblCedula control.
@@ -193,13 +184,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblCedula;
         
         /// <summary>
-        /// lblCedulaDato control.
+        /// txtCedula control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCedulaDato;
+        protected global::System.Web.UI.WebControls.TextBox txtCedula;
         
         /// <summary>
         /// lblDistrito control.
@@ -211,13 +202,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblDistrito;
         
         /// <summary>
-        /// lblDistritoDato control.
+        /// drpDistrito control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDistritoDato;
+        protected global::System.Web.UI.WebControls.DropDownList drpDistrito;
         
         /// <summary>
         /// lblFechaNacimiento control.
@@ -229,13 +220,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblFechaNacimiento;
         
         /// <summary>
-        /// lblFechaNacimientoDato control.
+        /// txtFechaNacimiento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFechaNacimientoDato;
+        protected global::System.Web.UI.WebControls.TextBox txtFechaNacimiento;
         
         /// <summary>
         /// lblTelefonoHabitacion control.
@@ -247,120 +238,30 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblTelefonoHabitacion;
         
         /// <summary>
-        /// lblTelefonoHabitacionDato control.
+        /// txtTelefonoHabitacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTelefonoHabitacionDato;
+        protected global::System.Web.UI.WebControls.TextBox txtTelefonoHabitacion;
         
         /// <summary>
-        /// PanelEstudios control.
+        /// PanelBotonActualizar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelEstudios;
+        protected global::System.Web.UI.WebControls.Panel PanelBotonActualizar;
         
         /// <summary>
-        /// lblEstudios control.
+        /// btnActualizar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEstudios;
-        
-        /// <summary>
-        /// dgEstudios control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid dgEstudios;
-        
-        /// <summary>
-        /// PanelExperienciasLaborales control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelExperienciasLaborales;
-        
-        /// <summary>
-        /// lblExperienciasLaborales control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblExperienciasLaborales;
-        
-        /// <summary>
-        /// dgExperienciasLaborales control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid dgExperienciasLaborales;
-        
-        /// <summary>
-        /// PanelOtros control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelOtros;
-        
-        /// <summary>
-        /// lblOtros control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOtros;
-        
-        /// <summary>
-        /// lblIdiomas control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIdiomas;
-        
-        /// <summary>
-        /// lblIdiomasDato control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIdiomasDato;
-        
-        /// <summary>
-        /// lblPasatiempos control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPasatiempos;
-        
-        /// <summary>
-        /// lblPasatiemposDato control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPasatiemposDato;
+        protected global::System.Web.UI.WebControls.Button btnActualizar;
     }
 }

@@ -4,7 +4,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
+<<<<<<< HEAD:ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Interfaz/ITCR.IntegrateAlTrabajo.Interfaz.csproj.user
+          <StartPageUrl>AdultoMayor/frmConsultarPerfilAdultoMayor.aspx</StartPageUrl>
+=======
           <StartPageUrl>AdultoMayor/frmConsultarServiciosOfrecidos.aspx</StartPageUrl>
+>>>>>>> e590cbf1ff563b6feb4f65397d0d2115aff3516b:ProyectoBolsaTrabajo/ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Interfaz/ITCR.IntegrateAlTrabajo.Interfaz.csproj.user
           <StartAction>SpecificPage</StartAction>
           <AspNetDebugging>True</AspNetDebugging>
           <SilverlightDebugging>False</SilverlightDebugging>

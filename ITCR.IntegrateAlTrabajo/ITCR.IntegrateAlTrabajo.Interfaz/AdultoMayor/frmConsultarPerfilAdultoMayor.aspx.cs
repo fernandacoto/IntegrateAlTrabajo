@@ -96,6 +96,8 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
                 IdUsuario = Int16.Parse(TablaUsuario.Rows[0]["Id_Usuario"].ToString());
             }
 
+            Session["Id_Usuario"] = IdUsuario;
+
             Persona.FK_IdUsuario = IdUsuario;
             DataTable TablaPersona = Persona.Buscar();
 
@@ -169,6 +171,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
             if (TablaPersona.Rows.Count > 0)
             {
                 IdPersona = Int16.Parse(TablaPersona.Rows[0]["Id_Persona"].ToString());
+                Session["Id_Persona"] = IdPersona.ToString();
             }
 
             Estudio.FK_IdPersona = IdPersona;
@@ -273,6 +276,16 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
                 lblIdiomasDato.Text = ResultadoIdiomas;
             }
+        }
+
+        protected void ibtnEditarDatosPersonales_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("frmEditarEstudiosAdultoMayor.aspx");
+        }
+
+        protected void ibtnEditarDatosPersonales_Click1(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("frmEditarDatosPersonalesAdultoMayor.aspx");
         }
     }
 }

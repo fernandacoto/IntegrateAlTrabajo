@@ -19,6 +19,15 @@ D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.
 D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.csprojResolveAssemblyReference.cache
 D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.dll
 D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.pdb
+<<<<<<< HEAD:ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Negocios/obj/Debug/ITCR.IntegrateAlTrabajo.Negocios.csproj.FileListAbsolute.txt
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Negocios.dll
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Negocios.pdb
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.csprojResolveAssemblyReference.cache
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.dll
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.pdb
+=======
 E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Negocios.dll
 E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Negocios.pdb
 E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
@@ -26,3 +35,4 @@ E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR
 E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.csprojResolveAssemblyReference.cache
 E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.dll
 E:\Satcha\Desktop\Proyecto\IAT\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.pdb
+>>>>>>> e590cbf1ff563b6feb4f65397d0d2115aff3516b:ProyectoBolsaTrabajo/ITCR.IntegrateAlTrabajo/ITCR.IntegrateAlTrabajo.Negocios/obj/Debug/ITCR.IntegrateAlTrabajo.Negocios.csproj.FileListAbsolute.txt
